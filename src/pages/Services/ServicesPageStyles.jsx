@@ -39,6 +39,7 @@ export const StyledServices = styled.div`
     h2 {
       font-size: 2rem;
     }
+    padding-bottom: 2rem;
   }
 `;
 

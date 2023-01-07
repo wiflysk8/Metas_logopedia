@@ -15,6 +15,17 @@ export const FooterContainer = styled.footer`
     margin: 0 0.5rem;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    padding: 0;
+    width: 102vw;
+  }
 `;
 
 export const LogoWrapper = styled.div`
@@ -23,20 +34,32 @@ export const LogoWrapper = styled.div`
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 2rem;
+  }
 `;
 
 export const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
-
   gap: 1rem;
   padding: 1rem 0;
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.8rem;
+    width: 400px;
+    padding: 2rem 0;
+  }
 `;
 
 export const InfoItem = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
+  padding-left: 1rem;
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 export const LeftArea = styled.div`
@@ -44,5 +67,11 @@ export const LeftArea = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 55%;
-  padding-left: 1rem;
+
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    padding: 0;
+    flex-direction: column;
+    padding: 0;
+  }
 `;
