@@ -6,6 +6,7 @@ import {
 } from "./HomePageStyle";
 import Background from "../../assets/images/hero.png";
 import DemoCarousel from "../../components/ImageCarousel/ImageCarousel";
+import Footer from "../../components/Footer/Footer";
 
 const HomePage = () => {
   return (
@@ -35,6 +36,7 @@ const HomePage = () => {
         </StyledDescription>
         <DemoCarousel />
       </StyledHome>
+      <Footer />
     </>
   );
 };

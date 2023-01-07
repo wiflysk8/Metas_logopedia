@@ -28,15 +28,16 @@ const Adults = () => {
           <div>
             <ul>
               <li>Disfemia (tartamudez)</li>
-              <li>Dificultades articulatorias (diantria, dislalia, TSH)</li>
+              <li>Dificultades articulatorias (disartria, dislalia, TSH)</li>
             </ul>
           </div>
 
-          <h3>COMUNICACIÓN</h3>
+          <h3>DEGLUCIÓN</h3>
           <div>
             <ul>
-              <li>Habilidades sociales</li>
-              <li>Sistemas aumentativos y alternativos</li>
+              <li>Deglución atípica</li>
+              <li>Disfagia</li>
+              <li>Dificultades en alguno de los procesos de la deglución</li>
             </ul>
           </div>
         </ContentColumn>

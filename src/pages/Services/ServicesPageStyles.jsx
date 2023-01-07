@@ -64,10 +64,8 @@ export const ImageContainer = styled.div`
   span {
     font-size: 1.3rem;
     tex-align: center;
-  }
-  span:hover {
-    text-decoration: underline;
-    cursor: pointer;
+    color: #b1c2b6;
+    font-weight: 500;
   }
 
   @media screen and (max-width: 768px) {

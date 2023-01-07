@@ -54,12 +54,13 @@ export const TeamImage = styled.div`
   flex-direction: column;
   width: 45%;
   object-fit: cover;
-  border-radius: 10px;
+
   margin-bottom: 2rem;
 
   img {
     width: 100%;
     height: 100%;
+    border-radius: 12px;
   }
   @media screen and (max-width: 768px) {
     width: 100%;

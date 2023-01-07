@@ -7,6 +7,7 @@ export const CarouselWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 4rem;
+
   @media (max-width: 768px) {
     width: 100%;
   }

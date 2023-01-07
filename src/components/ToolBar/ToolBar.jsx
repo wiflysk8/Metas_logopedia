@@ -2,7 +2,7 @@ import React from "react";
 import SideMenu from "../SideMenu/SideMenu";
 import "./ToolBar.css";
 import logo from "../../assets/images/Metas_logo.jpg";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const toolbar = (props) => {
   return (
@@ -12,7 +12,9 @@ const toolbar = (props) => {
           <SideMenu click={props.drawerToggleClickHandler} />
         </div>
         <div className="toolbar_logo">
-          <img src={logo} alt="Metas Logo" className="logo_image" />
+          <Link to={"/"}>
+            <img src={logo} alt="Metas Logo" className="logo_image" />
+          </Link>
         </div>
         <div className="spacer" />
         <div className="toolbar_navigation-items">
