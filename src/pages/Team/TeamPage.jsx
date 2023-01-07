@@ -4,6 +4,7 @@ import RitaImg from "../../assets/images/Rita.jpg";
 import JenniferImg from "../../assets/images/Jennifer.jpg";
 import { TeamContainer, TeamImage } from "./TeamPageStyles";
 import Footer from "../../components/Footer/Footer";
+import { FooterWrapper } from "../../GlobalStyles";
 
 const TeamPage = () => {
   return (
@@ -28,9 +29,9 @@ const TeamPage = () => {
           </TeamImage>
         </div>
       </TeamContainer>
-      <div style={{ position: "absolute", bottom: "0px", width: "100%" }}>
+      <FooterWrapper>
         <Footer />
-      </div>
+      </FooterWrapper>
     </>
   );
 };

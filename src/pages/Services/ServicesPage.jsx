@@ -8,6 +8,7 @@ import kidsImg from "../../assets/images/kids.jpg";
 import adultsImg from "../../assets/images/adults.jpg";
 import { useNavigate } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
+import { FooterWrapper } from "../../GlobalStyles";
 
 const ServicesPage = () => {
   const navigate = useNavigate();
@@ -38,9 +39,9 @@ const ServicesPage = () => {
           </ImageContainer>
         </ImagesWrapper>
       </StyledServices>
-      <div style={{ position: "absolute", bottom: "0px", width: "100%" }}>
+      <FooterWrapper>
         <Footer />
-      </div>
+      </FooterWrapper>
     </>
   );
 };
