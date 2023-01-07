@@ -22,11 +22,16 @@ const Footer = () => {
     window.open("mailto:info@metaslogopedia.es?subject=Asunto&body=Mensaje");
   };
 
+  const searchAdress = () => {
+    const url = `https://www.google.com/maps/search/?api=1&query=Rúa Magistrado Manuel Artime, 26`;
+    window.open(url, "_blank");
+  };
+
   return (
     <FooterContainer>
       <LeftArea>
         <InfoContainer>
-          <InfoItem>
+          <InfoItem onClick={searchAdress}>
             <img src={locationLogo} alt="location" />
             <span>
               Rúa Magistrado Manuel Artime, 26 1º Derecha

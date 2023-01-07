@@ -58,7 +58,7 @@ export const InfoItem = styled.div`
   cursor: pointer;
   padding-left: 1rem;
   @media screen and (max-width: 768px) {
-    justify-content: center;
+    padding-left: 1rem;
   }
 `;
 
