@@ -139,9 +139,9 @@ export const ContentColumn = styled.div`
       width: 84%;
     }
     h3 {
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       text-align: center;
-      padding: 0.2rem 2rem;
+      padding: 0.5rem 2rem;
       padding: 4px 5rem;
     }
   }
