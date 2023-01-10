@@ -36,6 +36,7 @@ export const LogoWrapper = styled.div`
   gap: 1rem;
   @media screen and (max-width: 768px) {
     padding-bottom: 2rem;
+    flex-direction: row;
   }
 `;
 
@@ -44,6 +45,7 @@ export const InfoContainer = styled.div`
   flex-direction: column;
   gap: 1rem;
   padding: 1rem 0;
+  padding-left: 3rem;
 
   @media screen and (max-width: 768px) {
     font-size: 0.8rem;
@@ -73,5 +75,19 @@ export const LeftArea = styled.div`
     padding: 0;
     flex-direction: column;
     padding: 0;
+  }
+`;
+
+export const SocialWrapper = styled.div`
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 2rem;
   }
 `;

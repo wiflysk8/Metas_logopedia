@@ -5,6 +5,7 @@ import {
   InfoItem,
   LeftArea,
   LogoWrapper,
+  SocialWrapper,
 } from "./FooterStyles";
 import facebookLogo from "../../assets/icons/facebook.png";
 import linkedinLogo from "../../assets/icons/linkedin.png";
@@ -16,7 +17,23 @@ import phoneLogo from "../../assets/icons/phone.png";
 import { StyledLink } from "../../GlobalStyles";
 
 const Footer = () => {
-  const icons = [instagramLogo, facebookLogo, linkedinLogo];
+  const socials = [
+    {
+      name: "facebook",
+      logo: facebookLogo,
+      url: "https://www.facebook.com/metaslogopedia/",
+    },
+    {
+      name: "linkedin",
+      logo: linkedinLogo,
+      url: "https://www.linkedin.com/company/metaslogopedia/",
+    },
+    {
+      name: "instagram",
+      logo: instagramLogo,
+      url: "https://www.instagram.com/metas.logopedia/",
+    },
+  ];
 
   const sendEmail = () => {
     window.open("mailto:info@metaslogopedia.es?subject=Asunto&body=Mensaje");
@@ -46,7 +63,7 @@ const Footer = () => {
           >
             <InfoItem>
               <img src={phoneLogo} alt="phone logo" />
-              <span>604077457</span>
+              <span>604 077 457</span>
             </InfoItem>
           </StyledLink>
 
@@ -62,13 +79,16 @@ const Footer = () => {
           </StyledLink>
         </InfoContainer>
 
-        <LogoWrapper>
-          {icons.map((icon, index) => (
-            <a href="https://www.google.com/" target="_blank" rel="noreferrer">
-              <img key={index} src={icon} alt="icon" />
-            </a>
-          ))}
-        </LogoWrapper>
+        <SocialWrapper>
+          <h1 style={{ fontWeight: "bold" }}>Siguenos en:</h1>
+          <LogoWrapper>
+            {socials.map((social, index) => (
+              <a href={social.url} target="_blank" rel="noreferrer">
+                <img key={social.logo} src={social.logo} alt="icon" />
+              </a>
+            ))}
+          </LogoWrapper>
+        </SocialWrapper>
       </LeftArea>
     </FooterContainer>
   );
