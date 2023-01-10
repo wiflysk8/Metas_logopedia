@@ -49,12 +49,13 @@ const Footer = () => {
       <LeftArea>
         <InfoContainer>
           <InfoItem onClick={searchAdress}>
-            <img src={locationLogo} alt="location" />
-            <span>
-              Rúa Magistrado Manuel Artime, 26 1º Derecha
-              <br />
-              15004 A Coruña
-            </span>
+            <div>
+              <img src={locationLogo} alt="location" />
+              <span>
+                Rúa Magistrado Manuel Artime, 26 1º Derecha
+                <p> 15004 A Coruña</p>
+              </span>
+            </div>
           </InfoItem>
 
           <StyledLink
@@ -71,7 +72,10 @@ const Footer = () => {
             <img src={emailLogo} alt="email logo" />
             <span>info@metaslogopedia.es</span>
           </InfoItem>
-          <StyledLink href="https://api.whatsapp.com/send?phone=604077457&text=Me gustaría recibir más información a cerca de vuestros servicios.">
+          <StyledLink
+            href="https://api.whatsapp.com/send?phone=604077457&text=Me gustaría recibir más información a cerca de vuestros servicios."
+            target="_blank"
+          >
             <InfoItem>
               <img src={whatsappLogo} alt="email logo" />
               <span>Enviar mensaje de WhatsApp</span>
