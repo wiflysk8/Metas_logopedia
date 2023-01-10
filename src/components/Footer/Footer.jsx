@@ -19,6 +19,11 @@ import { StyledLink } from "../../GlobalStyles";
 const Footer = () => {
   const socials = [
     {
+      name: "instagram",
+      logo: instagramLogo,
+      url: "https://www.instagram.com/metas.logopedia/",
+    },
+    {
       name: "facebook",
       logo: facebookLogo,
       url: "https://www.facebook.com/metaslogopedia/",
@@ -27,11 +32,6 @@ const Footer = () => {
       name: "linkedin",
       logo: linkedinLogo,
       url: "https://www.linkedin.com/company/metaslogopedia/",
-    },
-    {
-      name: "instagram",
-      logo: instagramLogo,
-      url: "https://www.instagram.com/metas.logopedia/",
     },
   ];
 
