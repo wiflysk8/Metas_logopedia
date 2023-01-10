@@ -42,11 +42,11 @@ const Footer = () => {
 
           <StyledLink
             to="#"
-            onClick={() => (window.location.href = "tel:636505918")}
+            onClick={() => (window.location.href = "tel:604077457")}
           >
             <InfoItem>
               <img src={phoneLogo} alt="phone logo" />
-              <span>981 22 22 22</span>
+              <span>604077457</span>
             </InfoItem>
           </StyledLink>
 
@@ -54,7 +54,7 @@ const Footer = () => {
             <img src={emailLogo} alt="email logo" />
             <span>info@metaslogopedia.es</span>
           </InfoItem>
-          <StyledLink href="https://api.whatsapp.com/send?phone=636505918&text=Me gustaría recibir más información a cerca de vuestros servicios.">
+          <StyledLink href="https://api.whatsapp.com/send?phone=604077457&text=Me gustaría recibir más información a cerca de vuestros servicios.">
             <InfoItem>
               <img src={whatsappLogo} alt="email logo" />
               <span>Enviar mensaje de WhatsApp</span>
