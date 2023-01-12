@@ -6,7 +6,7 @@ export const StyledHome = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 7%;
   @media (max-width: 768px) {
     margin-top: 36%;
   }
@@ -18,8 +18,10 @@ export const StyledImageContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 100%;
+  height: 300px;
   object-fit: cover;
+  margin-bottom: 3rem;
   img {
     width: 100%;
     height: 100%;
