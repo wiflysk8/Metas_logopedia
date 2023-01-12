@@ -15,9 +15,7 @@ const Adults = () => {
           <div>
             <ul>
               <li>Lenguaje oral y escrito</li>
-              <li>
-                Agnosias (pérdida de la capacidad de identificar objectos)
-              </li>
+              <li>Agnosias (pérdida de la capacidad de identificar objetos)</li>
               <li>Memoria</li>
               <li>Atención</li>
               <li>Orientación</li>
@@ -43,32 +41,10 @@ const Adults = () => {
         </ContentColumn>
 
         <ContentColumn>
-          <h3>LECTURA Y ESCRITURA</h3>
+          <h3>ENFERMEDADES NEURODEGENERATIVAS</h3>
           <div>
             <ul>
-              <li>Dificultades en la adquisición de la lecto-escritura</li>
-              <li>Dislexia</li>
-              <li>Disgrafía</li>
-              <li>Disortografía</li>
-              <li>Discalculia</li>
-            </ul>
-          </div>
-
-          <h3>DEGLUCIÓN ATÍPICA</h3>
-          <div>
-            <ul>
-              <li>Dificultades en alguna de las fases deglutorias:</li>
-              <li style={{ listStyle: "inside" }}>
-                Alteraciones en la respiración
-              </li>
-              <li style={{ listStyle: "inside" }}>
-                Alteraciones en la masticación
-              </li>
-              <li style={{ listStyle: "inside" }}>
-                Alteraciones en la deglución
-              </li>
-              <li>Inconpetencia velar</li>
-              <li>Malos hábitos: succiones, uso de chupete, mordisqueo.</li>
+              <li>Demencias (Alzheimer)</li>
             </ul>
           </div>
 

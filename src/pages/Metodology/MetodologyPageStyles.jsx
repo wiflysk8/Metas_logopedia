@@ -68,7 +68,7 @@ export const MetodologyImage = styled.div`
   width: 30%;
   object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   img {
     width: 100%;
     height: 100%;

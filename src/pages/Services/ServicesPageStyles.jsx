@@ -8,7 +8,6 @@ export const StyledServices = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 4rem;
   h2 {
     font-size: 2rem;
     font-weight: 900;
@@ -16,20 +15,6 @@ export const StyledServices = styled.div`
     color: #b1c2b6;
     text-align: center;
   }
-
-  @media screen and (max-width: 768px) {
-    align-items: center;
-    justify-content: center;
-    margin-top: 34%;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 34%;
-    h2 {
-      font-size: 1.4rem;
-    }
-    padding-bottom: 2rem;
-  }
-
   p {
     font-size: 1.3rem;
     font-weight: 500;
@@ -38,13 +23,19 @@ export const StyledServices = styled.div`
     line-height: 1.5;
     text-align: center;
   }
-
   h4 {
     font-size: 1.2rem;
     font-weight: 900;
     margin-bottom: 4rem;
     color: #b1c2b6;
     text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 34%;
+    h2 {
+      font-size: 2rem;
+    }
+    padding-bottom: 2rem;
   }
 `;
 
@@ -56,7 +47,6 @@ export const ImageContainer = styled.div`
   width: 400px;
   gap: 1rem;
   cursor: pointer;
-
   &:hover {
     text-decoration: underline;
   }
@@ -66,14 +56,12 @@ export const ImageContainer = styled.div`
     object-fit: cover;
     border-radius: 10px;
   }
-
   span {
     font-size: 1.3rem;
     tex-align: center;
     color: #b1c2b6;
     font-weight: 500;
   }
-
   @media screen and (max-width: 768px) {
     width: 80%;
     align-self: center;
@@ -93,7 +81,6 @@ export const ContentContainer = styled.div`
   width: 100%;
   gap: 1rem;
   margin: 0 100px;
-
   @media screen and (max-width: 768px) {
     width: 100%;
     align-self: center;
@@ -113,10 +100,10 @@ export const ContentColumn = styled.div`
   h3 {
     font-size: 1rem;
     font-weight: 900;
-    letter-spacing: 12px;
+    letter-spacing: 8px;
     background-color: #f5f5f5;
     padding: 0.2rem 0;
-    width: 60%;
+    width: 70%;
     text-align: center;
     margin-bottom: 1rem;
   }
@@ -137,7 +124,6 @@ export const ContentColumn = styled.div`
     flex-direction: column;
     align-items: center;
   }
-
   @media screen and (max-width: 768px) {
     width: 100vw;
     div {
@@ -148,6 +134,7 @@ export const ContentColumn = styled.div`
       text-align: center;
       padding: 0.5rem 2rem;
       padding: 4px 5rem;
+      width: 100%;
     }
   }
 `;

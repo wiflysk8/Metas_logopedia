@@ -52,11 +52,14 @@ const Kids = () => {
           <h3>LECTURA Y ESCRITURA</h3>
           <div>
             <ul>
-              <li>Dificultades en la adquisición de la lecto-escritura</li>
-              <li>Dislexia</li>
-              <li>Disgrafía</li>
-              <li>Disortografía</li>
-              <li>Discalculia</li>
+              <li>Trastorno específico del aprendizaje:</li>
+              <li style={{ listStyle: "inside" }}>
+                Dificultades en la lectura
+              </li>
+              <li style={{ listStyle: "inside" }}>
+                Dificultades en la expresión escrita
+              </li>
+              <li style={{ listStyle: "inside" }}>Dificultades matemáticas</li>
             </ul>
           </div>
 
@@ -64,17 +67,11 @@ const Kids = () => {
           <div>
             <ul>
               <li>Dificultades en alguna de las fases deglutorias:</li>
-              <li style={{ listStyle: "inside" }}>
-                Alteraciones en la respiración
-              </li>
-              <li style={{ listStyle: "inside" }}>
-                Alteraciones en la masticación
-              </li>
-              <li style={{ listStyle: "inside" }}>
-                Alteraciones en la deglución
-              </li>
-              <li>Inconpetencia velar</li>
+              <li style={{ listStyle: "inside" }}>Fase oral</li>
+              <li style={{ listStyle: "inside" }}>Fase faríngea</li>
+              <li>Inadecuado posicionamiento lingual</li>
               <li>Malos hábitos: succiones, uso de chupete, mordisqueo.</li>
+              <li>Inconpetencia velar</li>
             </ul>
           </div>
 

@@ -51,10 +51,18 @@ const SideDrawer = (props) => {
             Servicios
           </NavLink>
         </li>
-        <NavLink className={"NavLink"} to={"/servicios/ninos"}>
+        <NavLink
+          className={"NavLink"}
+          to={"/servicios/ninos"}
+          onClick={handleHideDrawer}
+        >
           <span className="subSection">Niños</span>
         </NavLink>
-        <NavLink className={"NavLink"} to={"/servicios/adultos"}>
+        <NavLink
+          className={"NavLink"}
+          to={"/servicios/adultos"}
+          onClick={handleHideDrawer}
+        >
           <span className="subSection">Adultos</span>
         </NavLink>
         <li>

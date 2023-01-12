@@ -37,9 +37,9 @@ const MetodologyPage = () => {
         <ProgressBar bgcolor={"#81a08a"} completed={40} />
         <p>
           Este proceso es clave para valorar las dificultades de cada paciente.
-          Para ello se realiza una observación clínica y se utilizan distintas
-          pruebas estandarizadas, de screening, test, autorregistros… El número
-          de sesiones dependerá del caso.
+          Para ello se realiza una observación clínica y se utilizan las
+          distintas pruebas estandarizadas, de screening, test y autorregistros
+          necesarios según el caso.
         </p>
         <MetodologyImage>
           <img src={ValoracionImg} alt="Entrevista" />
@@ -63,8 +63,9 @@ const MetodologyPage = () => {
           familias, dando pautas semanales y aclarando dudas.
           <br /> Siempre bajo el consentimiento familiar o del propio paciente,
           nos parece primordial tener un contacto estrecho con los diferentes
-          profesionales que trabajan con nuestros pacientes: Profesores,
-          Psicólogos, Ortodoncistas, Terapeutas Ocupacionales…
+          profesionales que trabajan con nuestros pacientes (maestros,
+          psicólogos, ortodoncistas, terapeutas ocupacionales, etc.) con el fin
+          de optimizar y adaptar el plan de intervención.
         </p>
         <MetodologyImage>
           <img src={IntervencionImg} alt="Entrevista" />
@@ -75,8 +76,8 @@ const MetodologyPage = () => {
 
         <p>
           Cada cierto tiempo, realizamos valoraciones de seguimiento y
-          actualizamos objetivos. Cuando estos se hayan cumplido y no aparezcan
-          nuevas dificultades, se hará un seguimiento para una futura alta.
+          actualizamos objetivos. Cuando estos se hayan cumplido, se hará un
+          seguimiento para un futuro alta.
         </p>
         <MetodologyImage>
           <img src={AltaImg} alt="Entrevista" />

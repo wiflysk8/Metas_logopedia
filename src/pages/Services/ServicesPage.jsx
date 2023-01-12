@@ -25,7 +25,7 @@ const ServicesPage = () => {
 
   return (
     <>
-      <StyledServices>
+      <StyledServices className="mb-10">
         <h2>Nuestros Servicios</h2>
         <p>Nuestros servicios están orientados tanto a niños como a adultos.</p>
         <ImagesWrapper>
