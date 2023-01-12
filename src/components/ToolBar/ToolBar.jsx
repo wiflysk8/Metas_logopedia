@@ -1,7 +1,7 @@
 import React from "react";
 import SideMenu from "../SideMenu/SideMenu";
 import "./ToolBar.css";
-import logo from "../../assets/images/Metas_logo.jpg";
+import logo from "../../assets/images/logo_redondo.png";
 import { Link, NavLink } from "react-router-dom";
 
 const toolbar = (props) => {
