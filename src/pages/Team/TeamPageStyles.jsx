@@ -33,7 +33,7 @@ export const TeamContainer = styled.div`
 
   div {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
   }
   @media screen and (max-width: 768px) {
     span {
@@ -55,8 +55,11 @@ export const TeamImage = styled.div`
   flex-direction: column;
   width: 45%;
   object-fit: cover;
+  margin-bottom: 1rem;
 
-  margin-bottom: 2rem;
+  p {
+    margin: 0;
+  }
 
   img {
     width: 100%;
@@ -65,5 +68,13 @@ export const TeamImage = styled.div`
   }
   @media screen and (max-width: 768px) {
     width: 100%;
+    margin-bottom: 4rem;
+  }
+`;
+
+export const TeamMember = styled.div`
+  width: 35%;
+  @media screen and (max-width: 768px) {
+    width: 75%;
   }
 `;

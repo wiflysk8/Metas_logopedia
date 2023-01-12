@@ -1,8 +1,8 @@
 import React from "react";
 
-import RitaImg from "../../assets/images/Rita.jpg";
-import JenniferImg from "../../assets/images/Jennifer.jpg";
-import { TeamContainer, TeamImage } from "./TeamPageStyles";
+import RitaImg from "../../assets/images/rita2.png";
+import JenniferImg from "../../assets/images/Jennifer.jpeg";
+import { TeamContainer, TeamImage, TeamMember } from "./TeamPageStyles";
 import Footer from "../../components/Footer/Footer";
 import { FooterWrapper } from "../../GlobalStyles";
 
@@ -18,16 +18,26 @@ const TeamPage = () => {
           conocimientos y técnicas les permite ofrecer a sus pacientes la mejor
           atención.
         </span>
-        <div>
+        <TeamMember>
           <TeamImage>
             <img src={RitaImg} alt="Rita" />
-            <p>Rita Mondragón</p>
+            <strong style={{ color: "#b1c2b6" }}>
+              Rita Mondragón Nogueira
+            </strong>
+            <p>Logopeda colegiada Nº15/0549</p>
+            <p>Especialista en Gerontología Clínica</p>
           </TeamImage>
           <TeamImage>
-            <img src={JenniferImg} alt="Jennifer" />
-            <p>Jennifer Seoane</p>
+            <img
+              src={JenniferImg}
+              alt="Jennifer"
+              style={{ filter: "grayscale(100%)" }}
+            />
+            <strong style={{ color: "#b1c2b6" }}>Jennifer Seoane Pintor</strong>
+            <p>Logopeda colegiada Nº15/0416</p>
+            <p>Especialista en Atención Temprana</p>
           </TeamImage>
-        </div>
+        </TeamMember>
       </TeamContainer>
       <FooterWrapper>
         <Footer />
