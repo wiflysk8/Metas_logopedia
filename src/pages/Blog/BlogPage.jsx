@@ -1,11 +1,10 @@
 import React from "react";
-import { StyledServices } from "../Services/ServicesPageStyles";
 
 const BlogPage = () => {
   return (
-    <StyledServices>
-      <h1>Blog</h1>
-    </StyledServices>
+    <section className="mt-40 grid place-items-center">
+      <h1 className="text-green-200 text-3xl font-bold">Blog</h1>
+    </section>
   );
 };
 

@@ -8,6 +8,7 @@ export const TeamContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 2rem;
   @media screen and (max-width: 768px) {
     margin-top: 34%;
   }

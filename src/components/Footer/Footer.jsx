@@ -87,8 +87,13 @@ const Footer = () => {
           <h1 style={{ fontWeight: "bold" }}>Siguenos en:</h1>
           <LogoWrapper>
             {socials.map((social, index) => (
-              <a href={social.url} target="_blank" rel="noreferrer">
-                <img key={social.logo} src={social.logo} alt="icon" />
+              <a
+                href={social.url}
+                target="_blank"
+                rel="noreferrer"
+                key={social.logo}
+              >
+                <img src={social.logo} alt="icon" />
               </a>
             ))}
           </LogoWrapper>

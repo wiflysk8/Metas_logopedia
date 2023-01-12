@@ -48,9 +48,12 @@
   text-decoration: none;
   font-size: 1.5rem;
 }
-.toolbar_logo img {
-  height: 80px;
-  width: 80px;
+
+@media screen and (min-width: 760px) {
+  .toolbar_logo img {
+    height: 80px;
+    width: 80px;
+  }
 }
 
 .toolbar_title {
