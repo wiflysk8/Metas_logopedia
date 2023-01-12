@@ -8,6 +8,14 @@ export const StyledServices = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 4rem;
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
+    margin-top: 34%;
+    width: 80%;
+    margin-left: 10%;
+  }
 
   h2 {
     font-size: 2rem;

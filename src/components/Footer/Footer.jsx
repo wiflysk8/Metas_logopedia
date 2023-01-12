@@ -49,13 +49,11 @@ const Footer = () => {
       <LeftArea>
         <InfoContainer>
           <InfoItem onClick={searchAdress}>
-            <div>
-              <img src={locationLogo} alt="location" />
-              <span>
-                Rúa Magistrado Manuel Artime, 26 1º Derecha
-                <p> 15004 A Coruña</p>
-              </span>
-            </div>
+            <img src={locationLogo} alt="location" />
+            <span style={{ marginTop: "1rem" }}>
+              Rúa Magistrado Manuel Artime, 26 1º Derecha
+              <p> 15004 A Coruña</p>
+            </span>
           </InfoItem>
 
           <StyledLink

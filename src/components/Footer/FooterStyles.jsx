@@ -56,8 +56,10 @@ export const InfoContainer = styled.div`
 
 export const InfoItem = styled.div`
   display: flex;
+
   align-items: center;
   cursor: pointer;
+
   padding-left: 1rem;
   @media screen and (max-width: 768px) {
     padding-left: 1rem;
