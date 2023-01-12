@@ -33,7 +33,7 @@ const ContactPage = () => {
       <StyledServices>
         <h2>CONTACTA CON NOSOTRAS</h2>
         {submited ? (
-          <h4>Mensaje enviado</h4>
+          <h4 style={{ height: "29vh" }}>Mensaje enviado</h4>
         ) : (
           <form
             class="w-full max-w-lg  sm:ml-5"
