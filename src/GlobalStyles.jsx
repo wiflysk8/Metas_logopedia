@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const FooterWrapper = styled.div`
   width: 100%;
+  margin: 0 auto;
 `;
 
 export const StyledLink = styled.a`
