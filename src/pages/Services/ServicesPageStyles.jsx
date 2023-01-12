@@ -9,20 +9,25 @@ export const StyledServices = styled.div`
   justify-content: center;
   flex-direction: column;
   margin-bottom: 4rem;
-  @media screen and (max-width: 768px) {
-    align-items: center;
-    justify-content: center;
-    margin-top: 34%;
-    width: 80%;
-    margin-left: 10%;
-  }
-
   h2 {
     font-size: 2rem;
     font-weight: 900;
     margin-bottom: 4rem;
     color: #b1c2b6;
     text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
+    margin-top: 34%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 34%;
+    h2 {
+      font-size: 1.4rem;
+    }
+    padding-bottom: 2rem;
   }
 
   p {
@@ -40,14 +45,6 @@ export const StyledServices = styled.div`
     margin-bottom: 4rem;
     color: #b1c2b6;
     text-align: center;
-  }
-
-  @media screen and (max-width: 768px) {
-    margin-top: 34%;
-    h2 {
-      font-size: 2rem;
-    }
-    padding-bottom: 2rem;
   }
 `;
 
