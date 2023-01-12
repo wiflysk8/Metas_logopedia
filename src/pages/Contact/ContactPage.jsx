@@ -68,7 +68,7 @@ const ContactPage = () => {
                   type="text"
                   id="apellidos"
                   name="apellidos"
-                  placeholder="Apellidos"
+                  placeholder="Tus apellidos"
                 />
               </div>
               <div class="w-full md:w-1/2 px-3 mb-6">
