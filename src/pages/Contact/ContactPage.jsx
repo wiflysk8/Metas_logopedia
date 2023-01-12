@@ -120,7 +120,7 @@ const ContactPage = () => {
             </div>
             <div className="flex align-center justify-center">
               <button
-                class="hover:bg-[#81a08a] bg-white text-black font-bold py-2 px-14 border border[#81a08a] rounded"
+                class="hover:bg-[#81a08a] bg-white text-black font-bold py-2 px-14 border border[#81a08a] rounded ease-in-out duration-300"
                 onClick={sendEmail}
               >
                 Enviar
