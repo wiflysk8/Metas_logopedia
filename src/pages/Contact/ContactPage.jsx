@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Footer from "../../components/Footer/Footer";
 import { FooterWrapper } from "../../GlobalStyles";
 import { StyledServices } from "../Services/ServicesPageStyles";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
   const form = useRef();
