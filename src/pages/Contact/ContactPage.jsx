@@ -3,6 +3,7 @@ import Footer from "../../components/Footer/Footer";
 import { FooterWrapper } from "../../GlobalStyles";
 import { StyledServices } from "../Services/ServicesPageStyles";
 import emailjs from "@emailjs/browser";
+import MapPage from "../../components/Map/Map";
 
 const ContactPage = () => {
   const [submited, setSubmited] = useState(false);
@@ -129,6 +130,7 @@ const ContactPage = () => {
           </form>
         )}
       </StyledServices>
+      <MapPage />
       <FooterWrapper>
         <Footer />
       </FooterWrapper>
