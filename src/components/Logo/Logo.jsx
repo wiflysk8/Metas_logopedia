@@ -6,16 +6,16 @@ const Logo = () => {
   const [show, setShow] = useState(false);
 
   const animationProps = useSpring({
-    from: { transform: "translateX(-200%)" },
-    to: { transform: "translateX(0%)" },
-    config: { duration: 800 },
-    delay: 500,
+    from: { transform: "translateY(-200%)" },
+    to: { transform: "translateY(0%)" },
+    config: { duration: 1000 },
+    delay: 200,
     onStart: () => setShow(true),
   });
 
   return (
     <animated.div style={animationProps}>
-      {show && <img src={LogoImg} alt="Logo" />}
+      {show && <img src={LogoImg} alt="Logo" className="lg:h-32 lg:mb-3" />}
     </animated.div>
   );
 };

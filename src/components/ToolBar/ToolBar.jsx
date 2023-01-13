@@ -1,8 +1,7 @@
-import React from "react";
 import SideMenu from "../SideMenu/SideMenu";
 import "./ToolBar.css";
-import logo from "../../assets/images/logo_plano.png";
 import { Link, NavLink } from "react-router-dom";
+import Logo from "../Logo/Logo";
 
 const toolbar = (props) => {
   return (
@@ -13,7 +12,7 @@ const toolbar = (props) => {
         </div>
         <div className="toolbar_logo">
           <Link to={"/"}>
-            <img src={logo} alt="Metas Logo" className="logo_image" />
+            <Logo />
           </Link>
         </div>
         <div className="spacer" />
@@ -48,18 +47,20 @@ const toolbar = (props) => {
                 style={({ isActive }) => ({
                   color: isActive ? "#B1C2B6" : "#524f4ffa",
                 })}
-              ></NavLink>
-              <div className="dropdown">
-                <div className="dropbtn">Servicios</div>
-                <div className="dropdown-content">
-                  <NavLink className={"NavLink"} to={"/servicios/ninos"}>
-                    Niños
-                  </NavLink>
-                  <NavLink className={"NavLink"} to={"/servicios/adultos"}>
-                    Adultos
-                  </NavLink>
+              >
+                <div className="dropdown">
+                  <div className="dropbtn">Servicios</div>
+
+                  <div className="dropdown-content">
+                    <NavLink className={"NavLink"} to={"/servicios/ninos"}>
+                      Niños
+                    </NavLink>
+                    <NavLink className={"NavLink"} to={"/servicios/adultos"}>
+                      Adultos
+                    </NavLink>
+                  </div>
                 </div>
-              </div>
+              </NavLink>
             </li>
             <li>
               <NavLink
