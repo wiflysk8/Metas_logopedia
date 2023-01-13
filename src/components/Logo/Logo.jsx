@@ -6,10 +6,10 @@ const Logo = () => {
   const [show, setShow] = useState(false);
 
   const animationProps = useSpring({
-    from: { transform: "translateY(-200%)" },
+    from: { transform: "translateY(-100%)" },
     to: { transform: "translateY(0%)" },
-    config: { duration: 1000 },
-    delay: 200,
+    config: { duration: 4000 },
+    delay: 2000,
     onStart: () => setShow(true),
   });
 
