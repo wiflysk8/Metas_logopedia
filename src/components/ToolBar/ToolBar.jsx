@@ -10,7 +10,7 @@ const toolbar = (props) => {
         <div className="toggle-btn">
           <SideMenu click={props.drawerToggleClickHandler} />
         </div>
-        <div className="toolbar_logo">
+        <div className="toolbar_logo ">
           <Link to={"/"}>
             <Logo />
           </Link>

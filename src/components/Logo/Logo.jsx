@@ -15,7 +15,9 @@ const Logo = () => {
 
   return (
     <animated.div style={animationProps}>
-      {show && <img src={LogoImg} alt="Logo" className="lg:h-32 lg:mb-3" />}
+      {show && (
+        <img src={LogoImg} alt="Logo" className="lg:h-32 lg:mb-3 max-h-64" />
+      )}
     </animated.div>
   );
 };
