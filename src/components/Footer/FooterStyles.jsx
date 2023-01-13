@@ -9,6 +9,7 @@ export const FooterContainer = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   img {
     width: 2rem;
     height: 2rem;
@@ -17,14 +18,12 @@ export const FooterContainer = styled.footer`
   }
 
   @media screen and (max-width: 768px) {
-    align-items: center;
-    justify-content: center;
     img {
       width: 1.5rem;
       height: 1.5rem;
     }
     padding: 0;
-    width: 102vw;
+    width: 100%;
   }
 `;
 
@@ -45,21 +44,20 @@ export const InfoContainer = styled.div`
   flex-direction: column;
   gap: 1rem;
   padding: 1rem 0;
-  padding-left: 3rem;
 
   @media screen and (max-width: 768px) {
     font-size: 0.8rem;
-    width: 400px;
-    padding: 2rem 0;
+    font-weight: 600;
+    width: 100%;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
   }
 `;
 
 export const InfoItem = styled.div`
   display: flex;
-
   align-items: center;
   cursor: pointer;
-
   padding-left: 1rem;
   @media screen and (max-width: 768px) {
     padding-left: 1rem;
@@ -73,7 +71,7 @@ export const LeftArea = styled.div`
   width: 55%;
 
   @media screen and (max-width: 768px) {
-    width: 80%;
+    width: 100%;
     padding: 0;
     flex-direction: column;
     padding: 0;

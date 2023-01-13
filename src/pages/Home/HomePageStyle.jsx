@@ -29,7 +29,8 @@ export const StyledImageContainer = styled.div`
     border-radius: 6px;
   }
   @media (max-width: 768px) {
-    width: 100%;
+    width: 90%;
+    height: 200px;
   }
 `;
 

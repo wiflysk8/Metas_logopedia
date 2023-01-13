@@ -8,8 +8,8 @@ const Logo = () => {
   const animationProps = useSpring({
     from: { transform: "translateY(-100%)" },
     to: { transform: "translateY(0%)" },
-    config: { duration: 4000 },
-    delay: 2000,
+    config: { duration: 1600 },
+    delay: 400,
     onStart: () => setShow(true),
   });
 
