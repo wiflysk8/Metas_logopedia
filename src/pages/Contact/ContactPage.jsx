@@ -30,13 +30,13 @@ const ContactPage = () => {
 
   return (
     <>
-      <StyledServices className="mb-16 ">
+      <StyledServices className="mb-16">
         <h4>CONTACTA CON NOSOTRAS</h4>
         {submited ? (
           <h4 style={{ height: "29vh" }}>Mensaje enviado</h4>
         ) : (
           <form
-            className="w-100 max-w-lg  sm:ml-5 sm: w-80"
+            className="lg:w-auto sm:ml-5 sm: w-80"
             onSubmit={sendEmail}
             ref={form}
           >
@@ -110,7 +110,7 @@ const ContactPage = () => {
                   Déjanos tu mensaje
                 </label>
                 <textarea
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 h-32 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="mensaje"
                   name="mensaje"
                   type="text"
