@@ -19,7 +19,7 @@ const TeamPage = () => {
           atención.
         </span>
         <TeamMember>
-          <TeamImage>
+          <TeamImage style={{ width: "340px" }}>
             <img
               src={JenniferImg}
               alt="Jennifer"
