@@ -9,7 +9,7 @@ const SideDrawer = (props) => {
   }
 
   const handleHideDrawer = () => {
-    props.hideDrawer();
+    props.toggle(false);
   };
 
   return (

@@ -5,11 +5,10 @@ import { FooterWrapper } from "../../GlobalStyles";
 const BlogPage = () => {
   return (
     <section className="mt-28 grid place-items-center ">
-      {" "}
       <iframe
         className="w-full h-screen"
         src="https://metaslogopedia.blogspot.com"
-        frameborder="0"
+        frameBorder="0"
         title="blog"
       />
       <FooterWrapper>
