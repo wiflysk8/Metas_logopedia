@@ -18,13 +18,14 @@ const TeamPage = () => {
           conocimientos y técnicas les permite ofrecer a sus pacientes la mejor
           atención.
         </span>
-        <TeamMember>         
+        <TeamMember>
           <TeamImage>
             <img
               src={JenniferImg}
               alt="Jennifer"
               style={{ filter: "grayscale(100%)" }}
             />
+
             <strong style={{ color: "#b1c2b6" }}>Jennifer Seoane Pintor</strong>
             <p>Logopeda colegiada Nº15/0416</p>
             <p>Especialista en Atención Temprana</p>
