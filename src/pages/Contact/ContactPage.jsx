@@ -31,7 +31,7 @@ const ContactPage = () => {
   return (
     <>
       <StyledServices className="mb-16 ">
-        <h4>CONTACTA CON NOSOTRAS</h4>
+        <h2>CONTACTA CON NOSOTRAS</h2>
         {submited ? (
           <h4 style={{ height: "29vh" }}>Mensaje enviado</h4>
         ) : (
