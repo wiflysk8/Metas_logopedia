@@ -24,14 +24,7 @@ function Map() {
     <section className="c-map">
       <div className="c-map__googleMaps"></div>
       <GoogleMap zoom={16} center={center} mapContainerStyle={containerStyle}>
-        {isMounted && (
-          <Marker
-            position={center}
-            icon={
-              "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png"
-            }
-          />
-        )}
+        {isMounted && <Marker position={center} title="Metas Logopedia" />}
       </GoogleMap>
     </section>
   );
