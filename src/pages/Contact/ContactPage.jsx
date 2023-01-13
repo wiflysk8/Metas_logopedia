@@ -30,16 +30,12 @@ const ContactPage = () => {
 
   return (
     <>
-      <StyledServices className="mb-16">
+      <StyledServices className="mb-16 ">
         <h4>CONTACTA CON NOSOTRAS</h4>
         {submited ? (
           <h4 style={{ height: "29vh" }}>Mensaje enviado</h4>
         ) : (
-          <form
-            className="lg:w-auto sm:ml-5 sm: w-80"
-            onSubmit={sendEmail}
-            ref={form}
-          >
+          <form className="lg:w-fit sm: w-80" onSubmit={sendEmail} ref={form}>
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0 ">
                 <label

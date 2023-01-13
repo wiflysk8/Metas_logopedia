@@ -18,15 +18,7 @@ const TeamPage = () => {
           conocimientos y técnicas les permite ofrecer a sus pacientes la mejor
           atención.
         </span>
-        <TeamMember>
-          <TeamImage>
-            <img src={RitaImg} alt="Rita" />
-            <strong style={{ color: "#b1c2b6" }}>
-              Rita Mondragón Nogueira
-            </strong>
-            <p>Logopeda colegiada Nº15/0549</p>
-            <p>Especialista en Gerontología Clínica</p>
-          </TeamImage>
+        <TeamMember>         
           <TeamImage>
             <img
               src={JenniferImg}
@@ -36,6 +28,14 @@ const TeamPage = () => {
             <strong style={{ color: "#b1c2b6" }}>Jennifer Seoane Pintor</strong>
             <p>Logopeda colegiada Nº15/0416</p>
             <p>Especialista en Atención Temprana</p>
+          </TeamImage>
+          <TeamImage>
+            <img src={RitaImg} alt="Rita" />
+            <strong style={{ color: "#b1c2b6" }}>
+              Rita Mondragón Nogueira
+            </strong>
+            <p>Logopeda colegiada Nº15/0549</p>
+            <p>Especialista en Gerontología Clínica</p>
           </TeamImage>
         </TeamMember>
       </TeamContainer>
