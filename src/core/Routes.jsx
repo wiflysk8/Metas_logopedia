@@ -19,6 +19,7 @@ const RoutesFile = () => {
       <Route path="/metodologia" element={<MetodologyPage />} />
       <Route path="/servicios/ninos" element={<Kids />} />
       <Route path="/servicios/adultos" element={<Adults />} />
+      <Route path="*" element={<HomePage />} />
     </Routes>
   );
 };
