@@ -26,7 +26,7 @@ const Adults = () => {
           <div>
             <ul>
               <li>Disfemia (tartamudez)</li>
-              <li>Dificultades articulatorias (disartria, dislalia, TSH)</li>
+              <li>Disartria (dificultad para hablar)</li>
             </ul>
           </div>
 
@@ -36,6 +36,7 @@ const Adults = () => {
               <li>Deglución atípica</li>
               <li>Disfagia</li>
               <li>Dificultades en alguno de los procesos de la deglución</li>
+              <li>Inadecuado posicionamiento lingual</li>
             </ul>
           </div>
         </ContentColumn>
