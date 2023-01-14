@@ -125,14 +125,17 @@ const ContactPage = () => {
           </form>
         )}
       </StyledServices>
-      <div className="earth3dmap-com">
-        <iframe
-          id="iframemap"
-          src="https://maps.google.com/maps?q=metas+logopedia&ie=UTF8&iwloc=&output=embed"
-          width="100%"
-          height="500"
-          title="maps"
-        />
+      <div>
+        <div class="earth3dmap-com">
+          <iframe
+            id="iframemap"
+            src="https://maps.google.com/maps?q=metas+logopedia&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            width="100%"
+            height="500"
+            frameborder="0"
+            title="map"
+          ></iframe>
+        </div>
       </div>
       <FooterWrapper>
         <Footer />
