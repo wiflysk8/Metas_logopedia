@@ -51,7 +51,7 @@ const Footer = () => {
           <InfoItem onClick={searchAdress}>
             <img src={locationLogo} alt="location" />
             <div className="flex flex-col mt-4">
-              <span>Rúa Magistrado Manuel Artime, 26</span>
+              <span>Rúa Magistrado Manuel Artime 26, 1º Derecha</span>
 
               <span>15004 A Coruña</span>
             </div>
