@@ -63,7 +63,7 @@ const MetodologyPage = () => {
           familias, dando pautas semanales y aclarando dudas.
           <br /> Siempre bajo el consentimiento familiar o del propio paciente,
           nos parece primordial tener un contacto estrecho con los diferentes
-          profesionales que trabajan con nuestros pacientes (maestros,
+          profesionales que trabajan con nuestros pacientes (profesores,
           psicólogos, ortodoncistas, terapeutas ocupacionales, etc.) con el fin
           de optimizar y adaptar el plan de intervención.
         </p>
