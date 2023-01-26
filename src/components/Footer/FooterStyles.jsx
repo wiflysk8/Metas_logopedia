@@ -62,6 +62,11 @@ export const InfoItem = styled.div`
   @media screen and (max-width: 768px) {
     padding-left: 1rem;
   }
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const LeftArea = styled.div`
