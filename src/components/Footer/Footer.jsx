@@ -64,8 +64,8 @@ const Footer = () => {
             <InfoItem>
               <img src={phoneLogo} alt="phone logo" />
               <div>
-                <span>667648026</span>
-                <span> 660 30 31 09</span>
+                <span>667 64 80 26</span>
+                <span>660 30 31 09</span>
                 <span>604 077 457</span>
               </div>
             </InfoItem>
