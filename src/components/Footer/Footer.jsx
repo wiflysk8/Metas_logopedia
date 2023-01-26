@@ -62,14 +62,14 @@ const Footer = () => {
             <div>
               <StyledLink
                 to="#"
-                onClick={() => (window.location.href = "tel:604077457")}
+                onClick={() => (window.location.href = "tel:667648026")}
               >
                 <span>667 64 80 26</span>
               </StyledLink>
 
               <StyledLink
                 to="#"
-                onClick={() => (window.location.href = "tel:604077457")}
+                onClick={() => (window.location.href = "tel:660303109")}
               >
                 <span>660 30 31 09</span>
               </StyledLink>
