@@ -57,19 +57,31 @@ const Footer = () => {
             </div>
           </InfoItem>
 
-          <StyledLink
-            to="#"
-            onClick={() => (window.location.href = "tel:604077457")}
-          >
-            <InfoItem>
-              <img src={phoneLogo} alt="phone logo" />
-              <div>
+          <InfoItem>
+            <img src={phoneLogo} alt="phone logo" />
+            <div>
+              <StyledLink
+                to="#"
+                onClick={() => (window.location.href = "tel:604077457")}
+              >
                 <span>667 64 80 26</span>
+              </StyledLink>
+
+              <StyledLink
+                to="#"
+                onClick={() => (window.location.href = "tel:604077457")}
+              >
                 <span>660 30 31 09</span>
+              </StyledLink>
+
+              <StyledLink
+                to="#"
+                onClick={() => (window.location.href = "tel:604077457")}
+              >
                 <span>604 077 457</span>
-              </div>
-            </InfoItem>
-          </StyledLink>
+              </StyledLink>
+            </div>
+          </InfoItem>
 
           <InfoItem onClick={sendEmail}>
             <img src={emailLogo} alt="email logo" />
