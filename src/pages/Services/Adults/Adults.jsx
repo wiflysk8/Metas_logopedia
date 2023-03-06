@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../../components/Footer/Footer";
 import {
   ContentColumn,
   ContentContainer,
@@ -7,6 +8,7 @@ import {
 
 const Adults = () => {
   return (
+    <>
     <StyledServices>
       <h4>ÁREAS DE INTERVENCIÓN EN ADULTOS</h4>
       <ContentContainer>
@@ -67,6 +69,8 @@ const Adults = () => {
         </ContentColumn>
       </ContentContainer>
     </StyledServices>
+    <Footer/>
+    </>
   );
 };
 
