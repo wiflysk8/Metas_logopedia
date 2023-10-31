@@ -5,9 +5,10 @@ import {
   InfoItem,
   LeftArea,
   LogoWrapper,
+  MiddleArea,
   SocialWrapper,
+  FooterText,
 } from "./FooterStyles";
-import facebookLogo from "../../assets/icons/facebook.png";
 import linkedinLogo from "../../assets/icons/linkedin.png";
 import instagramLogo from "../../assets/icons/instagram.png";
 import emailLogo from "../../assets/icons/email.png";
@@ -24,14 +25,9 @@ const Footer = () => {
       url: "https://www.instagram.com/metas.logopedia/",
     },
     {
-      name: "facebook",
-      logo: facebookLogo,
-      url: "https://www.facebook.com/metaslogopedia/",
-    },
-    {
       name: "linkedin",
       logo: linkedinLogo,
-      url: "https://www.linkedin.com/company/metaslogopedia/",
+      url: "https://www.linkedin.com/company/metas-logopedia/",
     },
   ];
 
@@ -83,22 +79,26 @@ const Footer = () => {
             </InfoItem>
           </StyledLink>
         </InfoContainer>
-
-        <SocialWrapper>
-          <h1 style={{ fontWeight: "bold" }}>Siguenos en:</h1>
-          <LogoWrapper>
-            {socials.map((social, index) => (
-              <a
-                href={social.url}
-                target="_blank"
-                rel="noreferrer"
-                key={social.logo}
-              >
-                <img src={social.logo} alt="icon" />
-              </a>
-            ))}
-          </LogoWrapper>
-        </SocialWrapper>
+        <MiddleArea>
+          <SocialWrapper>
+            <h1 style={{ fontWeight: "bold" }}>Siguenos en:</h1>
+            <LogoWrapper>
+              {socials.map((social, index) => (
+                <a
+                  href={social.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  key={social.logo}
+                >
+                  <img src={social.logo} alt="icon" />
+                </a>
+              ))}
+            </LogoWrapper>
+          </SocialWrapper>
+          <FooterText>
+            Registro Sanitario C-15-004775
+          </FooterText>
+        </MiddleArea>
       </LeftArea>
     </FooterContainer>
   );

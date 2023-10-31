@@ -96,3 +96,13 @@ export const SocialWrapper = styled.div`
     padding-bottom: 2rem;
   }
 `;
+
+export const MiddleArea = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+`;
+
+export const FooterText = styled.span`
+text-align:start
+`
