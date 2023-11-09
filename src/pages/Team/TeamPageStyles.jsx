@@ -44,6 +44,7 @@ export const TeamContainer = styled.div`
     }
     div {
       flex-direction: column;
+      align-items: center;
     }
   }
 `;
@@ -65,6 +66,7 @@ export const TeamImage = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 12px;
+    object-fit: cover;
   }
   @media screen and (max-width: 768px) {
     width: 100%;
