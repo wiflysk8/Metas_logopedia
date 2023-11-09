@@ -34,6 +34,7 @@ export const TeamContainer = styled.div`
   div {
     display: flex;
     gap: 1rem;
+    width: 50vw;
   }
   @media screen and (max-width: 768px) {
     span {
@@ -45,6 +46,7 @@ export const TeamContainer = styled.div`
     div {
       flex-direction: column;
       align-items: center;
+      width: 60vw;
     }
   }
 `;
