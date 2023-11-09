@@ -1,7 +1,7 @@
 import React from "react";
 
-import RitaImg from "../../assets/images/rita2.png";
-import JenniferImg from "../../assets/images/Jennifer.jpeg";
+import RitaImg from "../../assets/images/Rita-profile.jpeg";
+import JenniferImg from "../../assets/images/Jenny-profile.jpeg";
 import { TeamContainer, TeamImage, TeamMember } from "./TeamPageStyles";
 import Footer from "../../components/Footer/Footer";
 import { FooterWrapper } from "../../GlobalStyles";
@@ -23,7 +23,7 @@ const TeamPage = () => {
             <img
               src={JenniferImg}
               alt="Jennifer"
-              style={{ filter: "grayscale(100%)" }}
+              style={{ objectFit: "cover" }}
             />
 
             <strong style={{ color: "#b1c2b6" }}>Jennifer Seoane Pintor</strong>
