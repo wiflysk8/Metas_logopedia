@@ -42,6 +42,7 @@ const TeamPage = () => {
             <img src={LuciaImg} alt="Lucía" />
             <strong style={{ color: "#b1c2b6" }}>Lucía Díaz Toro</strong>
             <p>Logopeda colegiada Nº15/0746</p>
+            <p>Asesora de lactancia</p>
           </TeamImage>
         </TeamMember>
       </TeamContainer>
