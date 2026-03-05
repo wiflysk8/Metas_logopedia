@@ -2,6 +2,7 @@ import React from "react";
 
 import RitaImg from "../../assets/images/Rita-profile.jpeg";
 import JenniferImg from "../../assets/images/Jenny-profile.jpeg";
+import LuciaImg from "../../assets/images/Lucia.jpeg";
 import { TeamContainer, TeamImage, TeamMember } from "./TeamPageStyles";
 import Footer from "../../components/Footer/Footer";
 import { FooterWrapper } from "../../GlobalStyles";
@@ -34,6 +35,12 @@ const TeamPage = () => {
             </strong>
             <p>Logopeda colegiada Nº15/0549</p>
             <p>Especialista en Gerontología Clínica</p>
+          </TeamImage>
+
+          <TeamImage>
+            <img src={LuciaImg} alt="Lucía" />
+            <strong style={{ color: "#b1c2b6" }}>Lucía Díaz Toro</strong>
+            <p>Logopeda colegiada Nº15/0746</p>
           </TeamImage>
         </TeamMember>
       </TeamContainer>
