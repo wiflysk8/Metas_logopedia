@@ -8,6 +8,8 @@ import {
   MiddleArea,
   SocialWrapper,
   FooterText,
+  LegalLinksContainer,
+  LegalLink,
 } from "./FooterStyles";
 import linkedinLogo from "../../assets/icons/linkedin.png";
 import instagramLogo from "../../assets/icons/instagram.png";
@@ -100,6 +102,10 @@ const Footer = () => {
           </FooterText>
         </MiddleArea>
       </LeftArea>
+      <LegalLinksContainer>
+        <LegalLink to="/aviso-legal">Aviso legal</LegalLink>
+        <LegalLink to="/proteccion-datos">Protección de datos</LegalLink>
+      </LegalLinksContainer>
     </FooterContainer>
   );
 };

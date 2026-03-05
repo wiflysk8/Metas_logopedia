@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
   background-color: var(--color-backgroundColor);
@@ -7,6 +8,7 @@ export const FooterContainer = styled.footer`
   text-align: center;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 
@@ -104,5 +106,38 @@ export const MiddleArea = styled.div`
 `;
 
 export const FooterText = styled.span`
-text-align:start
-`
+  text-align: start;
+`;
+
+export const LegalLinksContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
+`;
+
+export const LegalLink = styled(Link)`
+  font-size: 0.75rem;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #b1c2b6;
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.7rem;
+  }
+`;

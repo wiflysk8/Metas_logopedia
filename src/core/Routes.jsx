@@ -7,6 +7,8 @@ import Adults from "../pages/Services/Adults/Adults";
 import Kids from "../pages/Services/Kids/Kids";
 import ServicesPage from "../pages/Services/ServicesPage";
 import TeamPage from "../pages/Team/TeamPage";
+import AvisoLegal from "../pages/Legal/AvisoLegal";
+import ProteccionDatos from "../pages/Legal/ProteccionDatos";
 
 const RoutesFile = () => {
   return (
@@ -19,6 +21,8 @@ const RoutesFile = () => {
       <Route path="/metodologia" element={<MetodologyPage />} />
       <Route path="/servicios/ninos" element={<Kids />} />
       <Route path="/servicios/adultos" element={<Adults />} />
+      <Route path="/aviso-legal" element={<AvisoLegal />} />
+      <Route path="/proteccion-datos" element={<ProteccionDatos />} />
       <Route path="*" element={<HomePage />} />
     </Routes>
   );

@@ -19,6 +19,7 @@ const TeamPage = () => {
           conocimientos y técnicas les permite ofrecer a sus pacientes la mejor
           atención.
         </span>
+        <span>Equipo de trabajo:</span>
         <TeamMember>
           <TeamImage>
             <img src={JenniferImg} alt="Jennifer" />
