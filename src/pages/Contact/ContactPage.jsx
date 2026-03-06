@@ -6,10 +6,15 @@ import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
   const [submited, setSubmited] = useState(false);
+  const [privacyAccepted, setPrivacyAccepted] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    if (!privacyAccepted) {
+      alert("Debe aceptar la política de privacidad para enviar el formulario.");
+      return;
+    }
     emailjs
       .sendForm(
         "service_llstub1",
@@ -114,10 +119,32 @@ const ContactPage = () => {
                 />
               </div>
             </div>
+            <div className="w-full px-3 mb-6">
+              <label className="flex items-center">
+                <input
+                  type="checkbox"
+                  checked={privacyAccepted}
+                  onChange={(e) => setPrivacyAccepted(e.target.checked)}
+                  className="mr-2"
+                  required
+                />
+                <span className="text-sm text-gray-700">
+                  He leído y acepto la{" "}
+                  <a
+                    href="/proteccion-datos"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#81a08a] underline"
+                  >
+                    política de privacidad
+                  </a>
+                </span>
+              </label>
+            </div>
             <div className="flex align-center justify-center">
               <button
+                type="submit"
                 className="hover:bg-[#81a08a] bg-white text-black font-bold py-2 px-14 border border[#81a08a] rounded ease-in-out duration-300"
-                onClick={sendEmail}
               >
                 Enviar
               </button>

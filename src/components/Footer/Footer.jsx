@@ -105,6 +105,7 @@ const Footer = () => {
       <LegalLinksContainer>
         <LegalLink to="/aviso-legal">Aviso legal</LegalLink>
         <LegalLink to="/proteccion-datos">Protección de datos</LegalLink>
+        <LegalLink to="/cookies">Cookies</LegalLink>
       </LegalLinksContainer>
     </FooterContainer>
   );

@@ -9,6 +9,7 @@ import ServicesPage from "../pages/Services/ServicesPage";
 import TeamPage from "../pages/Team/TeamPage";
 import AvisoLegal from "../pages/Legal/AvisoLegal";
 import ProteccionDatos from "../pages/Legal/ProteccionDatos";
+import Cookies from "../pages/Legal/Cookies";
 
 const RoutesFile = () => {
   return (
@@ -23,6 +24,7 @@ const RoutesFile = () => {
       <Route path="/servicios/adultos" element={<Adults />} />
       <Route path="/aviso-legal" element={<AvisoLegal />} />
       <Route path="/proteccion-datos" element={<ProteccionDatos />} />
+      <Route path="/cookies" element={<Cookies />} />
       <Route path="*" element={<HomePage />} />
     </Routes>
   );
