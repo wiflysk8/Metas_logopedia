@@ -5,7 +5,6 @@ import {
   CookieBannerContent,
   CookieBannerText,
   CookieBannerButtons,
-  CookieButton,
   CookieButtonAccept,
   CookieButtonReject,
 } from "./CookieBannerStyles";
