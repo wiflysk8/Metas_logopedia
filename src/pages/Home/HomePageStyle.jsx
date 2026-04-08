@@ -62,4 +62,10 @@ export const StyledDescription = styled(MetodologyWrapper)`
   strong {
     font-weight: 800;
   }
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: #b1c2b6;
+  }
 `;
