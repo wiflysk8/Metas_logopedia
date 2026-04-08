@@ -13,14 +13,18 @@ const SideDrawer = (props) => {
   };
 
   return (
-    <nav className={drawerClasses.join(" ")}>
+    <nav
+      id="site-navigation-drawer"
+      className={drawerClasses.join(" ")}
+      aria-label="Navegación móvil"
+    >
       <ul>
         <li>
           <NavLink
             className={"NavLink"}
             to={"/"}
             style={({ isActive }) => ({
-              color: isActive ? "#B1C2B6" : "#524f4ffa",
+              color: isActive ? "#B1C2B6" : "#2f2e2e",
             })}
             onClick={handleHideDrawer}
           >
@@ -32,7 +36,7 @@ const SideDrawer = (props) => {
             className={"NavLink"}
             to={"/equipo"}
             style={({ isActive }) => ({
-              color: isActive ? "#B1C2B6" : "#524f4ffa",
+              color: isActive ? "#B1C2B6" : "#2f2e2e",
             })}
             onClick={handleHideDrawer}
           >
@@ -44,7 +48,7 @@ const SideDrawer = (props) => {
             className={"NavLink"}
             to={"/servicios"}
             style={({ isActive }) => ({
-              color: isActive ? "#B1C2B6" : "#524f4ffa",
+              color: isActive ? "#B1C2B6" : "#2f2e2e",
             })}
             onClick={handleHideDrawer}
           >
@@ -74,7 +78,7 @@ const SideDrawer = (props) => {
             className={"NavLink"}
             to={"/metodologia"}
             style={({ isActive }) => ({
-              color: isActive ? "#B1C2B6" : "#524f4ffa",
+              color: isActive ? "#B1C2B6" : "#2f2e2e",
             })}
             onClick={handleHideDrawer}
           >
@@ -86,7 +90,7 @@ const SideDrawer = (props) => {
             className={"NavLink"}
             to={"/blog"}
             style={({ isActive }) => ({
-              color: isActive ? "#B1C2B6" : "#524f4ffa",
+              color: isActive ? "#B1C2B6" : "#2f2e2e",
             })}
             onClick={handleHideDrawer}
           >
@@ -98,7 +102,7 @@ const SideDrawer = (props) => {
             className={"NavLink"}
             to={"/contacto"}
             style={({ isActive }) => ({
-              color: isActive ? "#B1C2B6" : "#524f4ffa",
+              color: isActive ? "#B1C2B6" : "#2f2e2e",
             })}
             onClick={handleHideDrawer}
           >

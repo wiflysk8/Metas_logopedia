@@ -35,17 +35,17 @@ export const CookieBannerText = styled.div`
 
   p {
     margin: 0;
-    color: #333;
+    color: #1a1a1a;
   }
 
   a {
-    color: #81a08a;
+    color: #3d5a45;
     text-decoration: underline;
-    font-weight: 500;
+    font-weight: 600;
     transition: color 0.3s ease;
 
     &:hover {
-      color: #b1c2b6;
+      color: #2f4a38;
     }
   }
 `;
@@ -57,7 +57,7 @@ export const CookieBannerButtons = styled.div`
   justify-content: flex-end;
 `;
 
-export const CookieButton = styled.button`
+export const CookieButton = styled.button.attrs({ type: "button" })`
   padding: 0.35rem 0.65rem;
   border: none;
   border-radius: 4px;
@@ -69,20 +69,20 @@ export const CookieButton = styled.button`
 `;
 
 export const CookieButtonAccept = styled(CookieButton)`
-  background-color: #81a08a;
-  color: white;
+  background-color: #4d6b56;
+  color: #ffffff;
 
   &:hover {
-    background-color: #b1c2b6;
+    background-color: #3d5a45;
   }
 `;
 
 export const CookieButtonReject = styled(CookieButton)`
   background-color: transparent;
-  color: #333;
-  border: 1px solid #555;
+  color: #1a1a1a;
+  border: 1px solid #3a3a3a;
 
   &:hover {
-    background-color: #f5f5f5;
+    background-color: #f0f0f0;
   }
 `;

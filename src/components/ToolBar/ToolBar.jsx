@@ -6,9 +6,15 @@ import Logo from "../Logo/Logo";
 const toolbar = (props) => {
   return (
     <header className="toolbar">
-      <nav className="toolbar_navigator">
+      <nav
+        className="toolbar_navigator"
+        aria-label="Navegación principal"
+      >
         <div className="toggle-btn">
-          <SideMenu click={props.drawerToggleClickHandler} />
+          <SideMenu
+            click={props.drawerToggleClickHandler}
+            drawerOpen={props.drawerOpen}
+          />
         </div>
         <div className="toolbar_logo ">
           <Link to={"/"}>
@@ -23,7 +29,7 @@ const toolbar = (props) => {
                 className={"NavLink"}
                 to={"/"}
                 style={({ isActive }) => ({
-                  color: isActive ? "#B1C2B6" : "#524f4ffa",
+                  color: isActive ? "#B1C2B6" : "#2f2e2e",
                 })}
               >
                 Inicio
@@ -34,7 +40,7 @@ const toolbar = (props) => {
                 className={"NavLink"}
                 to={"/equipo"}
                 style={({ isActive }) => ({
-                  color: isActive ? "#B1C2B6" : "#524f4ffa",
+                  color: isActive ? "#B1C2B6" : "#2f2e2e",
                 })}
               >
                 Equipo
@@ -46,7 +52,7 @@ const toolbar = (props) => {
                   className={"NavLink dropbtn"}
                   to={"/servicios"}
                   style={({ isActive }) => ({
-                    color: isActive ? "#B1C2B6" : "#524f4ffa",
+                    color: isActive ? "#B1C2B6" : "#2f2e2e",
                   })}
                 >
                   Servicios
@@ -56,7 +62,7 @@ const toolbar = (props) => {
                     className={"NavLink"}
                     to={"/servicios/ninos"}
                     style={({ isActive }) => ({
-                      color: isActive ? "#B1C2B6" : "#524f4ffa",
+                      color: isActive ? "#B1C2B6" : "#2f2e2e",
                     })}
                   >
                     Niños
@@ -65,7 +71,7 @@ const toolbar = (props) => {
                     className={"NavLink"}
                     to={"/servicios/adultos"}
                     style={({ isActive }) => ({
-                      color: isActive ? "#B1C2B6" : "#524f4ffa",
+                      color: isActive ? "#B1C2B6" : "#2f2e2e",
                     })}
                   >
                     Adultos
@@ -78,7 +84,7 @@ const toolbar = (props) => {
                 className={"NavLink"}
                 to={"/metodologia"}
                 style={({ isActive }) => ({
-                  color: isActive ? "#B1C2B6" : "#524f4ffa",
+                  color: isActive ? "#B1C2B6" : "#2f2e2e",
                 })}
               >
                 Metodología
@@ -89,7 +95,7 @@ const toolbar = (props) => {
                 className={"NavLink"}
                 to={"/blog"}
                 style={({ isActive }) => ({
-                  color: isActive ? "#B1C2B6" : "#524f4ffa",
+                  color: isActive ? "#B1C2B6" : "#2f2e2e",
                 })}
               >
                 Blog
@@ -100,7 +106,7 @@ const toolbar = (props) => {
                 className={"NavLink"}
                 to={"/contacto"}
                 style={({ isActive }) => ({
-                  color: isActive ? "#B1C2B6" : "#524f4ffa",
+                  color: isActive ? "#B1C2B6" : "#2f2e2e",
                 })}
               >
                 Contacto

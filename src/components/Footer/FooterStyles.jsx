@@ -133,7 +133,7 @@ export const InternalLinksTitle = styled.h2`
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #666;
+  color: #4a4a4a;
   margin-bottom: 0.5rem;
   text-align: center;
 `;
@@ -151,7 +151,7 @@ export const InternalLinksList = styled.ul`
 
 export const InternalLink = styled(Link)`
   font-size: 0.8rem;
-  color: #524f4f;
+  color: #2f2e2e;
   text-decoration: none;
   transition: color 0.2s ease;
 
@@ -180,7 +180,7 @@ export const LegalLinksContainer = styled.div`
 
 export const LegalLink = styled(Link)`
   font-size: 0.75rem;
-  color: #666;
+  color: #4a4a4a;
   text-decoration: none;
   transition: color 0.3s ease;
 

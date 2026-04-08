@@ -26,7 +26,9 @@ import { StyledLink } from "../../GlobalStyles";
 
 const MAPS_SEARCH_URL =
   "https://www.google.com/maps/search/?api=1&query=" +
-  encodeURIComponent("Rúa Magistrado Manuel Artime 26, 1º Derecha, 15004 A Coruña");
+  encodeURIComponent(
+    "Rúa Magistrado Manuel Artime 26, 1º Derecha, 15004 A Coruña",
+  );
 
 const Footer = () => {
   const socials = [
@@ -63,7 +65,6 @@ const Footer = () => {
                 width={512}
                 height={512}
                 loading="lazy"
-                aria-hidden={true}
               />
               <div className="flex flex-col mt-4">
                 <span>Rúa Magistrado Manuel Artime 26, 1º Derecha</span>
@@ -95,7 +96,6 @@ const Footer = () => {
                 width={512}
                 height={512}
                 loading="lazy"
-                aria-hidden={true}
               />
               <span>info@metaslogopedia.es</span>
             </FooterCrawlLink>
@@ -139,9 +139,7 @@ const Footer = () => {
               ))}
             </LogoWrapper>
           </SocialWrapper>
-          <FooterText>
-            Registro Sanitario C-15-004775
-          </FooterText>
+          <FooterText>Registro Sanitario C-15-004775</FooterText>
         </MiddleArea>
       </LeftArea>
       <InternalLinksSection aria-label="Enlaces de interés del sitio">
@@ -154,16 +152,24 @@ const Footer = () => {
             <InternalLink to="/equipo">Equipo de logopedas</InternalLink>
           </li>
           <li>
-            <InternalLink to="/servicios">Servicios para niños y adultos</InternalLink>
+            <InternalLink to="/servicios">
+              Servicios para niños y adultos
+            </InternalLink>
           </li>
           <li>
-            <InternalLink to="/servicios/ninos">Logopedia infantil</InternalLink>
+            <InternalLink to="/servicios/ninos">
+              Logopedia infantil
+            </InternalLink>
           </li>
           <li>
-            <InternalLink to="/servicios/adultos">Logopedia para adultos</InternalLink>
+            <InternalLink to="/servicios/adultos">
+              Logopedia para adultos
+            </InternalLink>
           </li>
           <li>
-            <InternalLink to="/metodologia">Metodología de intervención</InternalLink>
+            <InternalLink to="/metodologia">
+              Metodología de intervención
+            </InternalLink>
           </li>
           <li>
             <InternalLink to="/contacto">Cita e información</InternalLink>

@@ -10,7 +10,18 @@ class DemoCarousel extends Component {
   render() {
     return (
       <CarouselWrapper>
-        <Carousel showStatus={false} width={"100%"} infiniteLoop={true}>
+        <Carousel
+          showStatus={false}
+          showIndicators={false}
+          width={"100%"}
+          infiniteLoop={true}
+          ariaLabel="Galería de fotos del centro Metas Logopedia"
+          labels={{
+            leftArrow: "Diapositiva anterior",
+            rightArrow: "Diapositiva siguiente",
+            item: "Ir a la diapositiva",
+          }}
+        >
           <div>
             <img
               src={image3}

@@ -20,7 +20,7 @@ function Navbar() {
           className={"NavLink"}
           to={"/"}
           style={({ isActive }) => ({
-            color: isActive ? "#B1C2B6" : "#524f4ffa",
+            color: isActive ? "#B1C2B6" : "#2f2e2e",
           })}
         >
           Inicio
@@ -30,7 +30,7 @@ function Navbar() {
           className={"NavLink"}
           to={"/equipo"}
           style={({ isActive }) => ({
-            color: isActive ? "#B1C2B6" : "#524f4ffa",
+            color: isActive ? "#B1C2B6" : "#2f2e2e",
           })}
         >
           Equipo
@@ -40,7 +40,7 @@ function Navbar() {
           className={"NavLink"}
           to={"/servicios"}
           style={({ isActive }) => ({
-            color: isActive ? "#B1C2B6" : "#524f4ffa",
+            color: isActive ? "#B1C2B6" : "#2f2e2e",
           })}
         >
           Servicios
@@ -50,7 +50,7 @@ function Navbar() {
           className={"NavLink"}
           to={"/metodologia"}
           style={({ isActive }) => ({
-            color: isActive ? "#B1C2B6" : "#524f4ffa",
+            color: isActive ? "#B1C2B6" : "#2f2e2e",
           })}
         >
           Metodología
@@ -60,7 +60,7 @@ function Navbar() {
           className={"NavLink"}
           to={"/blog"}
           style={({ isActive }) => ({
-            color: isActive ? "#B1C2B6" : "#524f4ffa",
+            color: isActive ? "#B1C2B6" : "#2f2e2e",
           })}
         >
           Blog
@@ -70,7 +70,7 @@ function Navbar() {
           className={"NavLink"}
           to={"/contacto"}
           style={({ isActive }) => ({
-            color: isActive ? "#B1C2B6" : "#524f4ffa",
+            color: isActive ? "#B1C2B6" : "#2f2e2e",
           })}
         >
           Contacto

@@ -143,7 +143,7 @@ const ContactPage = () => {
                   He leído y acepto la{" "}
                   <Link
                     to="/proteccion-datos"
-                    className="text-[#81a08a] underline"
+                    className="text-[#3d5a45] underline font-semibold hover:text-[#2f4a38]"
                   >
                     política de privacidad
                   </Link>
@@ -153,9 +153,9 @@ const ContactPage = () => {
             <div className="flex align-center justify-center">
               <button
                 type="submit"
-                className="hover:bg-[#81a08a] bg-white text-black font-bold py-2 px-14 border border[#81a08a] rounded ease-in-out duration-300"
+                className="hover:bg-[#4d6b56] hover:text-white bg-white text-[#1a1a1a] font-bold py-2 px-14 border border-[#4d6b56] rounded ease-in-out duration-300"
               >
-                Enviar
+                Enviar formulario
               </button>
             </div>
           </form>
@@ -167,7 +167,7 @@ const ContactPage = () => {
           src="https://maps.google.com/maps?q=R%C3%BAa+Magistrado+Manuel+Artime%2C+26&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
           width="100%"
           height="500"
-          title="maps"
+          title="Mapa: ubicación de Metas Centro de Logopedia en A Coruña"
         />
       </div>
       <FooterWrapper>

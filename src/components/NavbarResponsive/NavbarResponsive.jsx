@@ -20,7 +20,10 @@ const NavbarResponsive = () => {
   }
   return (
     <div style={{ height: "100%" }}>
-      <ToolBar drawerToggleClickHandler={drawerToggleClickHandler} />
+      <ToolBar
+        drawerToggleClickHandler={drawerToggleClickHandler}
+        drawerOpen={sideDrawerOpen}
+      />
       <SideDrawer show={sideDrawerOpen} toggle={setSideDrawerOpen} />
       {backdrop}
     </div>
