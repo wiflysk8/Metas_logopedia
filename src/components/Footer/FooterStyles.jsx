@@ -71,6 +71,18 @@ export const InfoItem = styled.div`
   }
 `;
 
+/** Enlace real (mailto, tel, maps) para rastreo y accesibilidad; no usar href="#" ni solo onClick. */
+export const FooterCrawlLink = styled.a`
+  display: flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 export const LeftArea = styled.div`
   display: flex;
   align-items: center;

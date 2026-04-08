@@ -14,6 +14,7 @@ import {
   InternalLinksTitle,
   InternalLinksList,
   InternalLink,
+  FooterCrawlLink,
 } from "./FooterStyles";
 import linkedinLogo from "../../assets/icons/linkedin.png";
 import instagramLogo from "../../assets/icons/instagram.png";
@@ -22,6 +23,10 @@ import whatsappLogo from "../../assets/icons/whatsapp.png";
 import locationLogo from "../../assets/icons/location.png";
 import phoneLogo from "../../assets/icons/phone.png";
 import { StyledLink } from "../../GlobalStyles";
+
+const MAPS_SEARCH_URL =
+  "https://www.google.com/maps/search/?api=1&query=" +
+  encodeURIComponent("Rúa Magistrado Manuel Artime 26, 1º Derecha, 15004 A Coruña");
 
 const Footer = () => {
   const socials = [
@@ -41,32 +46,30 @@ const Footer = () => {
     },
   ];
 
-  const sendEmail = () => {
-    window.open("mailto:info@metaslogopedia.es?subject=Asunto&body=Mensaje");
-  };
-
-  const searchAdress = () => {
-    const url = `https://www.google.com/maps/search/?api=1&query=Rúa Magistrado Manuel Artime, 26`;
-    window.open(url, "_blank");
-  };
-
   return (
     <FooterContainer>
       <LeftArea>
         <InfoContainer>
-          <InfoItem onClick={searchAdress}>
-            <img
-              src={locationLogo}
-              alt="Ubicación del centro Metas en A Coruña"
-              width={512}
-              height={512}
-              loading="lazy"
-            />
-            <div className="flex flex-col mt-4">
-              <span>Rúa Magistrado Manuel Artime 26, 1º Derecha</span>
-
-              <span>15004 A Coruña</span>
-            </div>
+          <InfoItem>
+            <FooterCrawlLink
+              href={MAPS_SEARCH_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir dirección de Metas en Google Maps"
+            >
+              <img
+                src={locationLogo}
+                alt=""
+                width={512}
+                height={512}
+                loading="lazy"
+                aria-hidden={true}
+              />
+              <div className="flex flex-col mt-4">
+                <span>Rúa Magistrado Manuel Artime 26, 1º Derecha</span>
+                <span>15004 A Coruña</span>
+              </div>
+            </FooterCrawlLink>
           </InfoItem>
 
           <InfoItem>
@@ -78,28 +81,29 @@ const Footer = () => {
               loading="lazy"
             />
             <div>
-              <StyledLink
-                to="#"
-                onClick={() => (window.location.href = "tel:604077457")}
-              >
+              <StyledLink href="tel:604077457">
                 <span>604 077 457</span>
               </StyledLink>
             </div>
           </InfoItem>
 
-          <InfoItem onClick={sendEmail}>
-            <img
-              src={emailLogo}
-              alt="Correo electrónico"
-              width={512}
-              height={512}
-              loading="lazy"
-            />
-            <span>info@metaslogopedia.es</span>
+          <InfoItem>
+            <FooterCrawlLink href="mailto:info@metaslogopedia.es">
+              <img
+                src={emailLogo}
+                alt=""
+                width={512}
+                height={512}
+                loading="lazy"
+                aria-hidden={true}
+              />
+              <span>info@metaslogopedia.es</span>
+            </FooterCrawlLink>
           </InfoItem>
           <StyledLink
             href="https://api.whatsapp.com/send?phone=604077457&text=Me gustaría recibir más información a cerca de vuestros servicios."
             target="_blank"
+            rel="noopener noreferrer"
           >
             <InfoItem>
               <img
@@ -121,7 +125,7 @@ const Footer = () => {
                 <a
                   href={social.url}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   key={social.logo}
                 >
                   <img

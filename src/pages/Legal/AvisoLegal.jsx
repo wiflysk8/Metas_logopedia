@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../../components/Footer/Footer";
 import { FooterWrapper } from "../../GlobalStyles";
 import { LegalContainer, LegalContent } from "./LegalStyles";
+import { Link } from "react-router-dom";
 import Seo from "../../components/Seo";
 import { SEO } from "../../config/seo";
 
@@ -45,7 +46,8 @@ const AvisoLegal = () => {
 
           <h2>Datos personales que recabamos y como lo hacemos</h2>
           <p>
-            Lee la <a href="/proteccion-datos">Política de Privacidad</a>
+            Lee la{" "}
+            <Link to="/proteccion-datos">Política de Privacidad</Link>
           </p>
 
           <h2>Compromisos y obligaciones</h2>

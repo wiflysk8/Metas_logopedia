@@ -3,6 +3,7 @@ import Footer from "../../components/Footer/Footer";
 import { FooterWrapper } from "../../GlobalStyles";
 import { StyledServices } from "../Services/ServicesPageStyles";
 import emailjs from "@emailjs/browser";
+import { Link } from "react-router-dom";
 import Seo from "../../components/Seo";
 import { SEO } from "../../config/seo";
 
@@ -140,14 +141,12 @@ const ContactPage = () => {
                 />
                 <span className="text-sm text-gray-700">
                   He leído y acepto la{" "}
-                  <a
-                    href="/proteccion-datos"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    to="/proteccion-datos"
                     className="text-[#81a08a] underline"
                   >
                     política de privacidad
-                  </a>
+                  </Link>
                 </span>
               </label>
             </div>
