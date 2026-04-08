@@ -5,15 +5,22 @@ import {
   ContentContainer,
   StyledServices,
 } from "../ServicesPageStyles";
+import Seo from "../../../components/Seo";
+import { SEO } from "../../../config/seo";
 
 const Adults = () => {
   return (
     <>
-    <StyledServices>
-      <h4>ÁREAS DE INTERVENCIÓN EN ADULTOS</h4>
+      <Seo
+        title={SEO.serviciosAdultos.title}
+        description={SEO.serviciosAdultos.description}
+        path={SEO.serviciosAdultos.path}
+      />
+    <StyledServices className="services-areas">
+      <h1>Áreas de intervención en adultos</h1>
       <ContentContainer>
         <ContentColumn>
-          <h3>ESTIMULACIÓN COGNITIVA</h3>
+          <h2>ESTIMULACIÓN COGNITIVA</h2>
           <div>
             <ul>
               <li>Lenguaje oral y escrito</li>
@@ -24,7 +31,7 @@ const Adults = () => {
             </ul>
           </div>
 
-          <h3>HABLA</h3>
+          <h2>HABLA</h2>
           <div>
             <ul>
               <li>Disfemia (tartamudez)</li>
@@ -32,7 +39,7 @@ const Adults = () => {
             </ul>
           </div>
 
-          <h3>DEGLUCIÓN</h3>
+          <h2>DEGLUCIÓN</h2>
           <div>
             <ul>
               <li>Deglución atípica</li>
@@ -44,14 +51,14 @@ const Adults = () => {
         </ContentColumn>
 
         <ContentColumn>
-          <h3>ENFERMEDADES NEURODEGENERATIVAS</h3>
+          <h2>ENFERMEDADES NEURODEGENERATIVAS</h2>
           <div>
             <ul>
               <li>Demencias (Alzheimer)</li>
             </ul>
           </div>
 
-          <h3>AUDICIÓN</h3>
+          <h2>AUDICIÓN</h2>
           <div>
             <ul>
               <li>Hipoacusia</li>
@@ -59,7 +66,7 @@ const Adults = () => {
             </ul>
           </div>
 
-          <h3>VOZ</h3>
+          <h2>VOZ</h2>
           <div>
             <ul>
               <li>Disfonía</li>

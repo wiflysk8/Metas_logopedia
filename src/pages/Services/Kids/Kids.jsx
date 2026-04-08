@@ -5,15 +5,22 @@ import {
   ContentContainer,
   StyledServices,
 } from "../ServicesPageStyles";
+import Seo from "../../../components/Seo";
+import { SEO } from "../../../config/seo";
 
 const Kids = () => {
   return (
     <>
-    <StyledServices>
-      <h4>ÁREAS DE INTERVENCIÓN EN NIÑOS</h4>
+      <Seo
+        title={SEO.serviciosNinos.title}
+        description={SEO.serviciosNinos.description}
+        path={SEO.serviciosNinos.path}
+      />
+    <StyledServices className="services-areas">
+      <h1>Áreas de intervención en niños</h1>
       <ContentContainer>
         <ContentColumn>
-          <h3>LENGUAJE</h3>
+          <h2>LENGUAJE</h2>
           <div>
             <ul>
               <li>
@@ -30,7 +37,7 @@ const Kids = () => {
             </ul>
           </div>
 
-          <h3>HABLA</h3>
+          <h2>HABLA</h2>
           <div>
             <ul>
               <li>Trastorno de los Sonidos del Habla (TSH) :</li>
@@ -41,7 +48,7 @@ const Kids = () => {
             </ul>
           </div>
 
-          <h3>COMUNICACIÓN</h3>
+          <h2>COMUNICACIÓN</h2>
           <div>
             <ul>
               <li>Habilidades sociales</li>
@@ -51,7 +58,7 @@ const Kids = () => {
         </ContentColumn>
 
         <ContentColumn>
-          <h3>LECTURA Y ESCRITURA</h3>
+          <h2>LECTURA Y ESCRITURA</h2>
           <div>
             <ul>
               <li>Trastorno específico del aprendizaje:</li>
@@ -65,7 +72,7 @@ const Kids = () => {
             </ul>
           </div>
 
-          <h3>DEGLUCIÓN ATÍPICA</h3>
+          <h2>DEGLUCIÓN ATÍPICA</h2>
           <div>
             <ul>
               <li>Dificultades en alguna de las fases deglutorias:</li>
@@ -77,7 +84,7 @@ const Kids = () => {
             </ul>
           </div>
 
-          <h3>AUDICIÓN</h3>
+          <h2>AUDICIÓN</h2>
           <div>
             <ul>
               <li>Hipoacusia</li>
@@ -85,7 +92,7 @@ const Kids = () => {
             </ul>
           </div>
 
-          <h3>VOZ</h3>
+          <h2>VOZ</h2>
           <div>
             <ul>
               <li>Disfonía</li>

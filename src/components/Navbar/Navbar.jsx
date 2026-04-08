@@ -1,5 +1,5 @@
 import { LogoContainer, MenuContainer, NavbarStyled } from "./NavbarStyles";
-import logo from "../../assets/images/Metas_logo.png";
+import logo from "../../assets/images/Metas_logo.jpg";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <NavbarStyled>
       <LogoContainer>
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" width={270} height={249} />
         <div>
           <span>{title}</span>
           <span>{subtitle}</span>

@@ -3,6 +3,8 @@ import Footer from "../../components/Footer/Footer";
 import { FooterWrapper } from "../../GlobalStyles";
 import { StyledServices } from "../Services/ServicesPageStyles";
 import emailjs from "@emailjs/browser";
+import Seo from "../../components/Seo";
+import { SEO } from "../../config/seo";
 
 const ContactPage = () => {
   const [submited, setSubmited] = useState(false);
@@ -35,10 +37,18 @@ const ContactPage = () => {
 
   return (
     <>
+      <Seo
+        title={SEO.contacto.title}
+        description={SEO.contacto.description}
+        path={SEO.contacto.path}
+      />
       <StyledServices className="mb-16 ">
-        <h2>CONTACTA CON NOSOTRAS</h2>
+        <h1>Contacta con nosotras</h1>
+        <h2>Formulario de contacto</h2>
         {submited ? (
-          <h4 style={{ height: "29vh" }}>Mensaje enviado</h4>
+          <p role="status" style={{ height: "29vh", fontSize: "1.25rem" }}>
+            Mensaje enviado
+          </p>
         ) : (
           <form className="lg:w-fit sm: w-80" onSubmit={sendEmail} ref={form}>
             <div className="flex flex-wrap -mx-3 mb-6">

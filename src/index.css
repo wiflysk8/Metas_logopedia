@@ -3,16 +3,19 @@
 @font-face {
   font-family: "Sacramento";
   src: url("./assets/fonts/Sacramento/Sacramento-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Quicksand";
   src: url("./assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Overpass";
   src: url("./assets/fonts/Overpass/Overpass-VariableFont_wght.ttf");
+  font-display: swap;
 }
 
 html,

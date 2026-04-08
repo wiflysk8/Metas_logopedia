@@ -12,11 +12,19 @@ export const TeamContainer = styled.div`
   @media screen and (max-width: 768px) {
     margin-top: 34%;
   }
-  h2 {
+  h1 {
     font-size: 2rem;
     font-weight: 900;
     margin-bottom: 2rem;
     color: #b1c2b6;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.35rem;
+    font-weight: 800;
+    margin-bottom: 1.25rem;
+    color: #b1c2b6;
+    text-align: center;
   }
   span {
     font-size: 1.3rem;

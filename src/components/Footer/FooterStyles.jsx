@@ -109,6 +109,46 @@ export const FooterText = styled.span`
   text-align: start;
 `;
 
+export const InternalLinksSection = styled.nav`
+  width: 100%;
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 0.75rem 1rem 0;
+`;
+
+export const InternalLinksTitle = styled.h2`
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #666;
+  margin-bottom: 0.5rem;
+  text-align: center;
+`;
+
+export const InternalLinksList = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+`;
+
+export const InternalLink = styled(Link)`
+  font-size: 0.8rem;
+  color: #524f4f;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #b1c2b6;
+    text-decoration: underline;
+  }
+`;
+
 export const LegalLinksContainer = styled.div`
   display: flex;
   justify-content: center;

@@ -16,7 +16,18 @@ const Logo = () => {
 
   return (
     <animated.div style={animationProps}>
-      <LogoContainer>{show && <img src={LogoImg} alt="Logo" />}</LogoContainer>
+      <LogoContainer>
+        {show && (
+          <img
+            src={LogoImg}
+            alt="Logo Metas Centro de Logopedia"
+            width={1650}
+            height={1908}
+            loading="lazy"
+            decoding="async"
+          />
+        )}
+      </LogoContainer>
     </animated.div>
   );
 };

@@ -10,6 +10,10 @@ import {
   FooterText,
   LegalLinksContainer,
   LegalLink,
+  InternalLinksSection,
+  InternalLinksTitle,
+  InternalLinksList,
+  InternalLink,
 } from "./FooterStyles";
 import linkedinLogo from "../../assets/icons/linkedin.png";
 import instagramLogo from "../../assets/icons/instagram.png";
@@ -25,11 +29,15 @@ const Footer = () => {
       name: "instagram",
       logo: instagramLogo,
       url: "https://www.instagram.com/metas.logopedia/",
+      width: 512,
+      height: 512,
     },
     {
       name: "linkedin",
       logo: linkedinLogo,
       url: "https://www.linkedin.com/company/metas-logopedia/",
+      width: 128,
+      height: 128,
     },
   ];
 
@@ -47,7 +55,13 @@ const Footer = () => {
       <LeftArea>
         <InfoContainer>
           <InfoItem onClick={searchAdress}>
-            <img src={locationLogo} alt="location" />
+            <img
+              src={locationLogo}
+              alt="Ubicación del centro Metas en A Coruña"
+              width={512}
+              height={512}
+              loading="lazy"
+            />
             <div className="flex flex-col mt-4">
               <span>Rúa Magistrado Manuel Artime 26, 1º Derecha</span>
 
@@ -56,7 +70,13 @@ const Footer = () => {
           </InfoItem>
 
           <InfoItem>
-            <img src={phoneLogo} alt="phone logo" />
+            <img
+              src={phoneLogo}
+              alt="Teléfono de contacto"
+              width={512}
+              height={512}
+              loading="lazy"
+            />
             <div>
               <StyledLink
                 to="#"
@@ -68,7 +88,13 @@ const Footer = () => {
           </InfoItem>
 
           <InfoItem onClick={sendEmail}>
-            <img src={emailLogo} alt="email logo" />
+            <img
+              src={emailLogo}
+              alt="Correo electrónico"
+              width={512}
+              height={512}
+              loading="lazy"
+            />
             <span>info@metaslogopedia.es</span>
           </InfoItem>
           <StyledLink
@@ -76,14 +102,20 @@ const Footer = () => {
             target="_blank"
           >
             <InfoItem>
-              <img src={whatsappLogo} alt="email logo" />
+              <img
+                src={whatsappLogo}
+                alt="WhatsApp"
+                width={512}
+                height={512}
+                loading="lazy"
+              />
               <span>Enviar mensaje de WhatsApp</span>
             </InfoItem>
           </StyledLink>
         </InfoContainer>
         <MiddleArea>
           <SocialWrapper>
-            <h1 style={{ fontWeight: "bold" }}>Siguenos en:</h1>
+            <h2 style={{ fontWeight: "bold" }}>Siguenos en:</h2>
             <LogoWrapper>
               {socials.map((social, index) => (
                 <a
@@ -92,7 +124,13 @@ const Footer = () => {
                   rel="noreferrer"
                   key={social.logo}
                 >
-                  <img src={social.logo} alt="icon" />
+                  <img
+                    src={social.logo}
+                    alt={`Metas en ${social.name}`}
+                    width={social.width}
+                    height={social.height}
+                    loading="lazy"
+                  />
                 </a>
               ))}
             </LogoWrapper>
@@ -102,6 +140,35 @@ const Footer = () => {
           </FooterText>
         </MiddleArea>
       </LeftArea>
+      <InternalLinksSection aria-label="Enlaces de interés del sitio">
+        <InternalLinksTitle>Enlaces de interés</InternalLinksTitle>
+        <InternalLinksList>
+          <li>
+            <InternalLink to="/">Inicio — logopedia en A Coruña</InternalLink>
+          </li>
+          <li>
+            <InternalLink to="/equipo">Equipo de logopedas</InternalLink>
+          </li>
+          <li>
+            <InternalLink to="/servicios">Servicios para niños y adultos</InternalLink>
+          </li>
+          <li>
+            <InternalLink to="/servicios/ninos">Logopedia infantil</InternalLink>
+          </li>
+          <li>
+            <InternalLink to="/servicios/adultos">Logopedia para adultos</InternalLink>
+          </li>
+          <li>
+            <InternalLink to="/metodologia">Metodología de intervención</InternalLink>
+          </li>
+          <li>
+            <InternalLink to="/contacto">Cita e información</InternalLink>
+          </li>
+          <li>
+            <InternalLink to="/blog">Blog</InternalLink>
+          </li>
+        </InternalLinksList>
+      </InternalLinksSection>
       <LegalLinksContainer>
         <LegalLink to="/aviso-legal">Aviso legal</LegalLink>
         <LegalLink to="/proteccion-datos">Protección de datos</LegalLink>

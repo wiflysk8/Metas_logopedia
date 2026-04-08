@@ -2,13 +2,20 @@ import React from "react";
 import Footer from "../../components/Footer/Footer";
 import { FooterWrapper } from "../../GlobalStyles";
 import { LegalContainer, LegalContent } from "./LegalStyles";
+import Seo from "../../components/Seo";
+import { SEO } from "../../config/seo";
 
 const ProteccionDatos = () => {
   return (
     <>
+      <Seo
+        title={SEO.proteccionDatos.title}
+        description={SEO.proteccionDatos.description}
+        path={SEO.proteccionDatos.path}
+      />
       <LegalContainer>
         <LegalContent>
-          <h1>POLÍTICA DE PRIVACIDAD</h1>
+          <h1>Política de privacidad</h1>
           <p>
             Mediante esta política de privacidad nos comprometemos a asegurar que su información personal se encuentre protegida y no se utilice de forma indebida.
           </p>

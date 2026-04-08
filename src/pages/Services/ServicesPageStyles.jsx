@@ -9,11 +9,18 @@ export const StyledServices = styled.div`
   justify-content: center;
   flex-direction: column;
 
-  h2 {
+  h1 {
     font-size: 2rem;
     font-weight: 900;
     margin-bottom: 4rem;
     color: #b1c2b6;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #81a08a;
     text-align: center;
   }
   p {
@@ -24,7 +31,7 @@ export const StyledServices = styled.div`
     line-height: 1.5;
     text-align: center;
   }
-  h4 {
+  &.services-areas h1 {
     font-size: 1.2rem;
     font-weight: 900;
     margin-bottom: 4rem;
@@ -33,8 +40,11 @@ export const StyledServices = styled.div`
   }
   @media screen and (max-width: 768px) {
     margin-top: 34%;
-    h2 {
+    h1 {
       font-size: 2rem;
+    }
+    &.services-areas h1 {
+      font-size: 1.2rem;
     }
     padding-bottom: 2rem;
   }
@@ -98,7 +108,7 @@ export const ContentColumn = styled.div`
   position: relative;
   gap: 1rem;
   align-self: flex-start;
-  h3 {
+  h2 {
     font-size: 1rem;
     font-weight: 900;
     letter-spacing: 8px;
@@ -130,7 +140,7 @@ export const ContentColumn = styled.div`
     div {
       width: 84%;
     }
-    h3 {
+    h2 {
       letter-spacing: 1px;
       text-align: center;
       padding: 0.5rem 2rem;

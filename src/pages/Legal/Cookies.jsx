@@ -2,10 +2,17 @@ import React from "react";
 import Footer from "../../components/Footer/Footer";
 import { FooterWrapper } from "../../GlobalStyles";
 import { LegalContainer, LegalContent } from "./LegalStyles";
+import Seo from "../../components/Seo";
+import { SEO } from "../../config/seo";
 
 const Cookies = () => {
   return (
     <>
+      <Seo
+        title={SEO.cookies.title}
+        description={SEO.cookies.description}
+        path={SEO.cookies.path}
+      />
       <LegalContainer>
         <LegalContent>
           <h1>Política de Cookies</h1>

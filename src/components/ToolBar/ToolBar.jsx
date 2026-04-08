@@ -41,26 +41,37 @@ const toolbar = (props) => {
               </NavLink>
             </li>
             <li>
-              <NavLink
-                className={"NavLink"}
-                to={"/servicios"}
-                style={({ isActive }) => ({
-                  color: isActive ? "#B1C2B6" : "#524f4ffa",
-                })}
-              >
-                <div className="dropdown">
-                  <div className="dropbtn">Servicios</div>
-
-                  <div className="dropdown-content">
-                    <NavLink className={"NavLink"} to={"/servicios/ninos"}>
-                      Niños
-                    </NavLink>
-                    <NavLink className={"NavLink"} to={"/servicios/adultos"}>
-                      Adultos
-                    </NavLink>
-                  </div>
+              <div className="dropdown">
+                <NavLink
+                  className={"NavLink dropbtn"}
+                  to={"/servicios"}
+                  style={({ isActive }) => ({
+                    color: isActive ? "#B1C2B6" : "#524f4ffa",
+                  })}
+                >
+                  Servicios
+                </NavLink>
+                <div className="dropdown-content">
+                  <NavLink
+                    className={"NavLink"}
+                    to={"/servicios/ninos"}
+                    style={({ isActive }) => ({
+                      color: isActive ? "#B1C2B6" : "#524f4ffa",
+                    })}
+                  >
+                    Niños
+                  </NavLink>
+                  <NavLink
+                    className={"NavLink"}
+                    to={"/servicios/adultos"}
+                    style={({ isActive }) => ({
+                      color: isActive ? "#B1C2B6" : "#524f4ffa",
+                    })}
+                  >
+                    Adultos
+                  </NavLink>
                 </div>
-              </NavLink>
+              </div>
             </li>
             <li>
               <NavLink

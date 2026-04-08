@@ -12,13 +12,34 @@ class DemoCarousel extends Component {
       <CarouselWrapper>
         <Carousel showStatus={false} width={"100%"} infiniteLoop={true}>
           <div>
-            <img src={image3} alt="demo of " />
+            <img
+              src={image3}
+              alt="Actividades con niños en Metas Logopedia"
+              width={626}
+              height={418}
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div>
-            <img src={image2} alt="demo of " />
+            <img
+              src={image2}
+              alt="Terapia del lenguaje para niños en A Coruña"
+              width={1380}
+              height={920}
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div>
-            <img src={image1} alt="demo of " />
+            <img
+              src={image1}
+              alt="Sesión de logopedia infantil en Metas"
+              width={1380}
+              height={1029}
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </Carousel>
       </CarouselWrapper>

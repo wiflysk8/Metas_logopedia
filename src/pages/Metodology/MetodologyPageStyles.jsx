@@ -15,18 +15,20 @@ export const MetodologyWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
 
-  h2 {
+  h1 {
     font-size: 2rem;
     font-weight: 900;
     margin-bottom: 2rem;
     color: #b1c2b6;
+    text-align: center;
   }
 
-  h3 {
+  h2 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 2rem;
     color: #b1c2b6;
+    text-align: center;
   }
 
   span {

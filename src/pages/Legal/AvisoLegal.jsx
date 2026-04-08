@@ -2,10 +2,17 @@ import React from "react";
 import Footer from "../../components/Footer/Footer";
 import { FooterWrapper } from "../../GlobalStyles";
 import { LegalContainer, LegalContent } from "./LegalStyles";
+import Seo from "../../components/Seo";
+import { SEO } from "../../config/seo";
 
 const AvisoLegal = () => {
   return (
     <>
+      <Seo
+        title={SEO.avisoLegal.title}
+        description={SEO.avisoLegal.description}
+        path={SEO.avisoLegal.path}
+      />
       <LegalContainer>
         <LegalContent>
           <h1>Aviso Legal</h1>
