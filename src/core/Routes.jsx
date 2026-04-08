@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import BlogPage from "../pages/Blog/BlogPage";
 import ContactPage from "../pages/Contact/ContactPage";
 import HomePage from "../pages/Home/HomePage";
@@ -25,7 +25,7 @@ const RoutesFile = () => {
       <Route path="/aviso-legal" element={<AvisoLegal />} />
       <Route path="/proteccion-datos" element={<ProteccionDatos />} />
       <Route path="/cookies" element={<Cookies />} />
-      <Route path="*" element={<HomePage />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 };

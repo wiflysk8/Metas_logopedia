@@ -10,6 +10,7 @@ export const CookieBannerContainer = styled.div`
   z-index: 1000;
   padding: 1.5rem;
   border-top: 2px solid #81a08a;
+  contain: layout style paint;
 
   @media screen and (max-width: 768px) {
     padding: 1rem;
@@ -116,4 +117,3 @@ export const CookieButtonReject = styled(CookieButton)`
     transform: translateY(0);
   }
 `;
-

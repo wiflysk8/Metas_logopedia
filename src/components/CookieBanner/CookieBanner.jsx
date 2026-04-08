@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   CookieBannerContainer,
@@ -9,27 +9,28 @@ import {
   CookieButtonReject,
 } from "./CookieBannerStyles";
 
-const CookieBanner = () => {
-  const [showBanner, setShowBanner] = useState(false);
+function readConsentPending() {
+  try {
+    return (
+      typeof window !== "undefined" &&
+      !window.localStorage.getItem("cookieConsent")
+    );
+  } catch {
+    return true;
+  }
+}
 
-  useEffect(() => {
-    // Verificar si el usuario ya ha tomado una decisión sobre las cookies
-    const cookieConsent = localStorage.getItem("cookieConsent");
-    if (!cookieConsent) {
-      setShowBanner(true);
-    }
-  }, []);
+const CookieBanner = () => {
+  const [showBanner, setShowBanner] = useState(readConsentPending);
 
   const handleAccept = () => {
     localStorage.setItem("cookieConsent", "accepted");
     setShowBanner(false);
-    // Aquí puedes inicializar Google Analytics u otras cookies si es necesario
   };
 
   const handleReject = () => {
     localStorage.setItem("cookieConsent", "rejected");
     setShowBanner(false);
-    // Aquí puedes desactivar cookies no esenciales si es necesario
   };
 
   if (!showBanner) {
@@ -37,7 +38,7 @@ const CookieBanner = () => {
   }
 
   return (
-    <CookieBannerContainer>
+    <CookieBannerContainer role="region" aria-label="Aviso de cookies">
       <CookieBannerContent>
         <CookieBannerText>
           <p>
@@ -61,4 +62,3 @@ const CookieBanner = () => {
 };
 
 export default CookieBanner;
-
